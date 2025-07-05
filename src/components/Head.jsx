@@ -11,7 +11,7 @@ const Head = () => {
     <>
       <main className="bg-big-squares fixed w-full ">
         <div className=" max-w-[1250px]  bg-big-squares mx-auto text-white py-4 px-6 md:px-12 flex flex-row justify-between items-center relative">
-          <span className="text-sm sm:text-lg  md:text-lg lg:text-lg font-bold flex flex-row  items-center">
+          <span className="text-sm sm:text-lg  md:text-lg lg:text-lg font-bold flex flex-row  items-center cursor-pointer">
             <span className=" text-blue-500">&lt;</span>
             <span className="">CALEB</span>
             <span className="text-blue-500">/</span>
@@ -19,8 +19,8 @@ const Head = () => {
             <span className="text-blue-500">&gt;</span>
           </span>
           <ul className="hidden md:flex lg:flex flex-row justify-between items-center gap-5 lg:gap-10">
-            <li>About</li>
-            <li>Skills</li>
+            <li className="cursor-pointer">About</li>
+            <li className="cursor-pointer">Skills</li>
             <li>Experience</li>
             <li>Projects</li>
             <li>Education</li>
