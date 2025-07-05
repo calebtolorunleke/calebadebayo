@@ -1,29 +1,75 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import profilePic from "../images/aboutme.jpg";
-import { name } from "../data/db";
-import { desc } from "../data/db";
+import { motion } from "framer-motion";
+import { aboutme, name, desc } from "../data/db";
 
 const About = () => {
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  useEffect(() => {
+    const current = aboutme[index].stack;
+
+    if (subIndex === current.length + 1 && !deleting) {
+      // Pause before deleting
+      setTimeout(() => setDeleting(true), 1000);
+      return;
+    }
+
+    if (subIndex === 0 && deleting) {
+      setDeleting(false);
+      setIndex((prev) => (prev + 1) % aboutme.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setText(current.substring(0, subIndex));
+      setSubIndex((prev) => (deleting ? prev - 1 : prev + 1));
+      setTypingSpeed(deleting ? 50 : 150);
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, deleting]);
+
   return (
     <main className="bg-big-squares">
-      <div className="bg-big-squares grid grid-row  md:grid-cols-2 lg:grid-cols-2 bg-blue-300 pt-30 pb-10 max-w-[1240px]  mx-auto px-12 gap-5 md:gap-20 items-center">
-        <div className="order-2 sm:order-2 md:order-1 text-center md:text-start lg:order-1 flex flex-col items-center md:items-start lg:items-start gap-2">
-          <h1 className="text-white text-2xl md:text-4xl font-bold">
+      <div className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-12 gap-5 items-center">
+        {/* Left Text Section */}
+        <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
+          <h1 className="text-white text-2xl md:text-5xl font-bold">
             Hi, I am
           </h1>
           <h1 className="text-white text-3xl md:text-5xl font-bold">
             {name.middlename}
           </h1>
-          <span></span>
-          <p className="text-white">{desc.description}</p>
-          <p></p>
+          <h1 className="text-xl md:text-4xl text-white font-bold">
+            I am a {""}
+            <span className="text-xl md:text-4xl  text-blue-500 h-[60px] inline-block min-w-[250px]">
+              {text}
+              <motion.span
+                className="inline-block ml-1"
+                animate={{ opacity: [0, 1] }}
+                transition={{ repeat: Infinity, duration: 0.8 }}
+              >
+                |
+              </motion.span>
+            </span>
+          </h1>
+          <p className="text-white text-xl">{desc.description}</p>
+          <button className="text-white bg-blue-500 mt-10 rounded-4xl shadow px-5 py-2 font-bold text-lg md:text-2xl">
+            DOWNLOAD CV
+          </button>
         </div>
-        <div className="flex flex-col order-1 items-center md:items-start lg:items-start">
+
+        {/* Right Image Section */}
+        <div className="order-1 md:order-2 flex justify-center">
           <img
-            order-1
             src={profilePic}
             alt="Profile"
-            className="rounded-full w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border border-blue-500 border-5 "
+            className="rounded-full w-[13rem] h-[13rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border-5 border-blue-500"
           />
         </div>
       </div>

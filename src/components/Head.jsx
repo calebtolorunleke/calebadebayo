@@ -21,13 +21,21 @@ const Head = () => {
           <ul className="hidden md:flex lg:flex flex-row justify-between items-center gap-5 lg:gap-10">
             <li className="cursor-pointer">About</li>
             <li className="cursor-pointer">Skills</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Education</li>
+            <li className="cursor-pointer">Experience</li>
+            <li className="cursor-pointer">Projects</li>
+            <li className="cursor-pointer">Education</li>
           </ul>
           <div className="hidden md:flex lg:flex flex-row justify-between items-center gap-5 ">
-            <img src={gitLogo} alt="github logo" className="w-7 h-7" />
-            <img src={inLogo} alt="linkedin logo" className="w-7 h-7" />
+            <img
+              src={gitLogo}
+              alt="github logo"
+              className="w-7 h-7 cursor-pointer"
+            />
+            <img
+              src={inLogo}
+              alt="linkedin logo"
+              className="w-7 h-7 cursor-pointer"
+            />
           </div>
           <button
             className="md:hidden lg:hidden "
