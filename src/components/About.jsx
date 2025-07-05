@@ -36,12 +36,7 @@ const About = () => {
 
   return (
     <main className="bg-big-squares">
-      <div
-        className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-12 gap-5 items-center"
-        style={{
-          boxShadow: "0 0 80px 20px rgba(0, 0, 0, 0.9)",
-        }}
-      >
+      <div className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-12 gap-5 items-center">
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
           <h1 className="text-white text-2xl md:text-5xl font-bold">
@@ -75,9 +70,9 @@ const About = () => {
           <img
             src={profilePic}
             alt="Profile"
-            className="rounded-full w-[13rem] h-[13rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border-5 border-blue-500"
+            className="rounded-full w-[13rem] h-[13rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border-5 border-blue-500 img-cover"
             style={{
-              boxShadow: "0 0 80px 20px rgba(0, 0, 0, 0.9)",
+              boxShadow: "10px 10px 80px 40px rgba(0.9, 0.9, 0.9, 0.9)",
             }}
           />
         </div>
