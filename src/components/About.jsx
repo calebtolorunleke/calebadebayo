@@ -40,23 +40,24 @@ const About = () => {
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
           <h1 className="text-white text-2xl md:text-5xl font-bold">
-            Hi, I am
+            Hi, I am a
           </h1>
           <h1 className="text-white text-3xl md:text-5xl font-bold">
             {name.middlename}
           </h1>
+
           <h1 className="text-xl md:text-4xl text-white font-bold">
-            I am a {""}
-            <span className="text-xl md:text-4xl  text-blue-500 h-[60px] inline-block min-w-[250px]">
-              {text}
-              <motion.span
-                className="inline-block ml-1"
-                animate={{ opacity: [0, 1] }}
-                transition={{ repeat: Infinity, duration: 0.8 }}
-              >
-                |
-              </motion.span>
+            <span className="text-xl md:text-4xl  text-white font-bold">
+              I am{" "}
             </span>
+            <span className="text-xl md:text-4xl text-blue-500">{text}</span>
+            <motion.span
+              className="inline-block ml-1 text-xl md:text-4xl text-blue-500"
+              animate={{ opacity: [0, 1] }}
+              transition={{ repeat: Infinity, duration: 0.8 }}
+            >
+              |
+            </motion.span>
           </h1>
           <p className="text-white text-xl">{desc.description}</p>
           <button className="text-white bg-blue-500 mt-10 rounded-4xl shadow px-5 py-2 font-bold text-lg md:text-2xl">
