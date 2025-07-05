@@ -4,7 +4,7 @@ import inLogo from "../images/linkedInIcon.png";
 
 const Menubar = () => {
   return (
-    <div className="flex flex-col bg-black/20 py-4 gap-5 mx-20 my-5">
+    <div className="flex flex-col bg-black/80 py-6 gap-5 mx-20 my-5 rounded-xl">
       <ul className="flex flex-col justify-between items-center gap-5">
         <li>About</li>
         <li>Skills</li>

@@ -60,7 +60,7 @@ const About = () => {
             </motion.span>
           </h1>
           <p className="text-white text-xl">{desc.description}</p>
-          <button className="text-white bg-blue-500 mt-10 rounded-4xl shadow px-5 py-2 font-bold text-lg md:text-2xl">
+          <button className="text-white bg-blue-500 mt-10 rounded-4xl shadow px-4 md:px-8 py-3 font-bold text-lg md:text-xl">
             DOWNLOAD CV
           </button>
         </div>
