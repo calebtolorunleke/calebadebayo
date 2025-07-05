@@ -40,7 +40,7 @@ const About = () => {
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
           <h1 className="text-white text-2xl md:text-5xl font-bold">
-            Hi, I am a
+            Hi, I am
           </h1>
           <h1 className="text-white text-3xl md:text-5xl font-bold">
             {name.middlename}
@@ -48,7 +48,7 @@ const About = () => {
 
           <h1 className="text-xl md:text-4xl text-white font-bold">
             <span className="text-xl md:text-4xl  text-white font-bold">
-              I am{" "}
+              I am a{" "}
             </span>
             <span className="text-xl md:text-4xl text-blue-500">{text}</span>
             <motion.span
