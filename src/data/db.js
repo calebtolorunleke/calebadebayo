@@ -130,3 +130,21 @@ export const workExp = [{
         { name: "IT360 Application Manager" }
     ]
 }]
+
+
+
+
+export const projects = [{
+    title: "",
+    subTitle: "",
+    goal: "",
+    myRole: "",
+    techStack: [
+        { stack: "next.js" },
+        { stack: "redux" },
+        { stack: "tailwindcss" },
+        { stack: "typescript" }
+    ],
+    img: "",
+    outcome: ""
+}]
