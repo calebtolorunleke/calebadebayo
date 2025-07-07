@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "../data/db";
@@ -9,8 +8,15 @@ const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const slideInterval = useRef(null);
 
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
   const nextSlide = () => {
     setActiveIndex((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevSlide = () => {
+    setActiveIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
   };
 
   const goToSlide = (index) => {
@@ -21,6 +27,26 @@ const Projects = () => {
     slideInterval.current = setInterval(nextSlide, 5000);
     return () => clearInterval(slideInterval.current);
   }, []);
+
+  // Swipe event handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const distance = touchStartX.current - touchEndX.current;
+    if (distance > 50) {
+      nextSlide();
+    } else if (distance < -50) {
+      prevSlide();
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
 
   return (
     <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56] text-white overlap-hidden ">
@@ -35,7 +61,7 @@ const Projects = () => {
         </p>
 
         {/* Slide Container */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden md:overflow-visible">
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{
@@ -44,6 +70,9 @@ const Projects = () => {
                 activeIndex * (100 / projects.length)
               }%)`,
             }}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {projects.map((projectData, index) => {
               const isActive = index === activeIndex;
@@ -83,7 +112,6 @@ const Projects = () => {
                       </div>
                       <div>
                         <h3 className="text-blue-500 font-bold">Tech Stack</h3>
-
                         <div className="mt-1 flex flex-wrap gap-1">
                           {projectData.techStack.map((techStackData, idx) => (
                             <span
