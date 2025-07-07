@@ -106,3 +106,6 @@ export const Skilldb = [
         ],
     },
 ];
+
+
+export const workExp = [{}]

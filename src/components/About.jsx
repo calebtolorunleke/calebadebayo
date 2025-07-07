@@ -67,20 +67,14 @@ const About = () => {
 
         {/* Right Image Section */}
         <div className="order-1 md:order-2 flex justify-center">
-          <div className="relative inline-block">
-            {/* Animated Dashed Circle */}
-            <div className="absolute -inset-[3px] z-0 rounded-full border-2 border-dashed border-white animate-spin-slow pointer-events-none"></div>
-
-            {/* Profile Image */}
-            <img
-              src={profilePic}
-              alt="Profile"
-              className="relative z-10 rounded-full w-[13rem] h-[13rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border-[5px] border-blue-500 object-cover"
-              style={{
-                boxShadow: "10px 10px 80px 40px rgba(0.9, 0.9, 0.9, 0.9)",
-              }}
-            />
-          </div>
+          <img
+            src={profilePic}
+            alt="Profile"
+            className="rounded-full w-[13rem] h-[13rem] sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] border-5 border-blue-500 img-cover"
+            style={{
+              boxShadow: "10px 10px 80px 40px rgba(0.9, 0.9, 0.9, 0.9)",
+            }}
+          />
         </div>
       </div>
     </main>

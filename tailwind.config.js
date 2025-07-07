@@ -1,14 +1,11 @@
-
-
-// tailwind.config.js
 module.exports = {
-    content: ["./src/**/*.{js,jsx,ts,tsx,html}"], // make sure your paths are right
+    content: [
+        "./src/**/*.{js,jsx,ts,tsx}", // or whatever your structure is
+    ],
     theme: {
-        extend: {
-            animation: {
-                'spin-slow': 'spin 10s linear infinite',
-            },
-        },
+        extend: {},
     },
     plugins: [],
 };
+
+

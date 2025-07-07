@@ -5,7 +5,7 @@ import { div } from "framer-motion/client";
 
 const Skills = () => {
   return (
-    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#60abff]">
+    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56]">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center ">
         <h1 className="text-xl md:text-3xl lg:text-3xl underline decoration-blue-500 underline-offset-10 pb-5 decoration-dash font-bold decoration-[5px] ">
           SKILLS
