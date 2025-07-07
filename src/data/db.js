@@ -108,4 +108,25 @@ export const Skilldb = [
 ];
 
 
-export const workExp = [{}]
+export const workExp = [{
+    jobTitle: "Software Engineer",
+    companyName: "Prospera AI",
+    date: "Apr 2025 - Jun 2025",
+    role: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cumque quis incidunt vero sunt suscipit nobis sequi, sint porro facere est facilis repellat molestiae maiores vitae tempora unde minus. Autem, quidem aliquid.",
+    toolsUsed: [
+        { name: "Grafana" },
+        { name: "Dynatrace" },
+        { name: "IT360 Application Manager" }
+    ]
+},
+{
+    jobTitle: "IT Engineer",
+    companyName: "UBA",
+    date: "Mar 2023 - Jun 2025",
+    role: " Autem, quidem aliquid.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cumque quis incidunt vero sunt suscipit nobis sequi, sint porro facere est facilis repellat molestiae maiores vitae tempora unde minus.",
+    toolsUsed: [
+        { name: "Grafana" },
+        { name: "Dynatrace" },
+        { name: "IT360 Application Manager" }
+    ]
+}]

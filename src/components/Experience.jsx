@@ -1,4 +1,5 @@
 import React from "react";
+import { workExp } from "../data/db";
 
 const Experience = () => {
   return (
@@ -28,29 +29,40 @@ const Experience = () => {
           various organizations
         </p>
 
-        <div className="py-5 flex flex-col gap-3 border border-3 px-4 rounded-2xl  md:px-12">
-          <div className="flex flex-row justify-between items-start">
-            <h2 className="flex flex-col items-start">
-              <span className="text-2xl">Software Engineer</span>
-              <span className="text-xl text-gray-400">Prospera AI</span>
-            </h2>
-            <div className="bg-gray-400 rounded-xl py-1 px-3">
-              <span>Apr 2025</span> - <span>Jun 2025</span>
-            </div>
-          </div>
+        <div className="flex flex-col gap-10 md:gap-15">
+          {workExp.map((workExpData, index) => (
+            <div
+              className="py-5 flex flex-col gap-3 border border-3 px-4 rounded-2xl  md:px-12"
+              key={index}
+            >
+              <div className="flex flex-row justify-between items-start">
+                <h2 className="flex flex-col items-start">
+                  <span className="text-lg md:text-2xl">
+                    {workExpData.jobTitle}
+                  </span>
+                  <span className="text-md md:text-xl text-gray-400">
+                    {workExpData.companyName}
+                  </span>
+                </h2>
+                <div className="bg-gray-400 rounded-lg py-1 px-2 md:px-3">
+                  <span className="text-sm md:text-lg">{workExpData.date}</span>
+                </div>
+              </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-            cumque quis incidunt vero sunt suscipit nobis sequi, sint porro
-            facere est facilis repellat molestiae maiores vitae tempora unde
-            minus. Autem, quidem aliquid.
-          </p>
+              <p>{workExpData.role}</p>
 
-          <div className="flex flex-wrap gap-3">
-            <div className="flex flex-row items-center justify-center gap-2 px-3 py-2 rounded-3xl border border-gray-600">
-              <span className="text-sm">Grafana</span>
+              <div className="flex flex-wrap gap-3">
+                {workExpData.toolsUsed.map((toolsData, index) => (
+                  <div
+                    className="flex flex-row items-center justify-center gap-2 px-3 py-2 rounded-3xl border border-gray-600"
+                    key={index}
+                  >
+                    <span className="text-sm">{toolsData.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </main>
