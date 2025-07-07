@@ -147,7 +147,9 @@ export const projects = [{
         { stack: "typescript" }
     ],
     img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses."
+    outcome: "Ready-to-launch shopping site for small businesses.",
+    github: "google.com",
+    live: "okay.com"
 }, {
     title: "Tasman",
     subTitle: "suba osuab osuba",
@@ -160,5 +162,37 @@ export const projects = [{
         { stack: "css" }
     ],
     img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses."
+    outcome: "Ready-to-launch shopping site for small businesses.",
+    github: "google.com",
+    live: "okay.com"
+}, {
+    title: "Tasman",
+    subTitle: "suba osuab osuba",
+    goal: "thank you lord",
+    myRole: "Ready-to-launch shopping site for small businesses",
+    techStack: [
+        { stack: "node.js" },
+        { stack: "grafana" },
+        { stack: "all" },
+        { stack: "css" }
+    ],
+    img: brandwave,
+    outcome: "Ready-to-launch shopping site for small businesses.",
+    github: "google.com",
+    live: "okay.com"
+}, {
+    title: "Tasman",
+    subTitle: "suba osuab osuba",
+    goal: "thank you lord",
+    myRole: "Ready-to-launch shopping site for small businesses",
+    techStack: [
+        { stack: "node.js" },
+        { stack: "grafana" },
+        { stack: "all" },
+        { stack: "css" }
+    ],
+    img: brandwave,
+    outcome: "Ready-to-launch shopping site for small businesses.",
+    github: "google.com",
+    live: "okay.com"
 }]
