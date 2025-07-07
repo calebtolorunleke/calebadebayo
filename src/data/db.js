@@ -3,6 +3,7 @@ import { img } from "framer-motion/client";
 import skill1 from "../skillImages/skill1.png";
 import skill2 from "../skillImages/skill2.png";
 import skill3 from "../skillImages/skill3.png";
+import brandwave from "../images/the_brandwave.png";
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
 
@@ -135,16 +136,29 @@ export const workExp = [{
 
 
 export const projects = [{
-    title: "",
-    subTitle: "",
-    goal: "",
-    myRole: "",
+    title: "Brandwave",
+    subTitle: "Clothing E-commerce Site",
+    goal: "agbeniga ma yowo",
+    myRole: "Ready-to-launch shopping site for small businesses",
     techStack: [
         { stack: "next.js" },
         { stack: "redux" },
         { stack: "tailwindcss" },
         { stack: "typescript" }
     ],
-    img: "",
-    outcome: ""
+    img: brandwave,
+    outcome: "Ready-to-launch shopping site for small businesses."
+}, {
+    title: "Tasman",
+    subTitle: "suba osuab osuba",
+    goal: "thank you lord",
+    myRole: "Ready-to-launch shopping site for small businesses",
+    techStack: [
+        { stack: "node.js" },
+        { stack: "grafana" },
+        { stack: "all" },
+        { stack: "css" }
+    ],
+    img: brandwave,
+    outcome: "Ready-to-launch shopping site for small businesses."
 }]

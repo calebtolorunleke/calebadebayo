@@ -19,21 +19,21 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 md:gap-20">
           {Skilldb.map((eachSkill, index) => (
             <div
-              className="flex flex-col border p-5 rounded-xl items-center gap-4"
+              className="flex flex-col mx-5 border p-2 md:p-5 rounded-xl items-center gap-4"
               key={index}
             >
               <h1 className="text-lg md:text-3xl text-center text-gray-400 font-bold">
                 {eachSkill.stack}
               </h1>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              <div className="flex flex-wrap gap-3">
                 {eachSkill.skills.map((skill, subIndex) => (
                   <div
                     key={subIndex}
-                    className="flex flex-row items-center justify-center gap-2 px-3 py-2 rounded-3xl border border-gray-600"
+                    className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-3xl border border-gray-600"
                   >
-                    <img src={skill.img} alt={skill.name} className="w-7 h-7" />
-                    <span className="text-sm">{skill.name}</span>
+                    <img src={skill.img} alt={skill.name} className="w-5 h-5" />
+                    <span className="text-sm md:text-lg">{skill.name}</span>
                   </div>
                 ))}
               </div>

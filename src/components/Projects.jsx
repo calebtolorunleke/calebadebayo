@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { projects } from "../data/db";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   return (
@@ -13,52 +17,79 @@ const Projects = () => {
           Deep dive into some of my recent projects and their impact
         </p>
 
-        <div className="py-10">
-          <div className="grid grid-cols-2 border p-1 md:p-3 gap-5 md:gap-10 rounded-xl border-blue-500 md:max-w-2xl">
-            <div className="flex flex-col gap-2">
-              <div>
-                <h1 className="text-blue-500 font-bold">Clotify</h1>
-                <h3>Clothing E-commerce Site</h3>
-              </div>
-              <div>
-                <h3 className="text-blue-500 font-bold">Goal</h3>
-                <p>Create a stylish online shop with cart, checkout</p>
-              </div>
-              <div>
-                <h3 className="text-blue-500 font-bold">My Role</h3>
-                <p>
-                  Built complete frontend, handled cart logic, and made the site
-                  fully responsive
-                </p>
-              </div>
-              <div>
-                <h3 className="text-blue-500 font-bold">Tech Stack</h3>
-                <p>
-                  Built complete frontend, handled cart logic, and made the site
-                  fully responsive
-                </p>
-              </div>
-            </div>
-            <div>
-              <img src="" alt="" />
+        {projects.map((projectData, index) => (
+          <div className="py-10">
+            <div className="grid grid-col-1 md:grid-cols-2 border p-4 mx:2 md:p-7 gap-5 md:gap-10 rounded-xl border-blue-500 md:max-w-2xl items-center">
+              <div className="flex flex-col gap-2">
+                <div>
+                  <h1 className="text-white text-lg md:text-xl font-bold">
+                    {projectData.title}
+                  </h1>
+                  <p className="text-blue-500">{projectData.subTitle}</p>
+                </div>
+                <div>
+                  <h3 className="text-blue-500 font-bold">Goal</h3>
+                  <p>{projectData.goal}</p>
+                </div>
+                <div>
+                  <h3 className="text-blue-500 font-bold">My Role</h3>
+                  <p>{projectData.myRole}</p>
+                </div>
+                <div>
+                  <h3 className="text-blue-500 font-bold">Tech Stack</h3>
 
-              <div>
-                <h3 className="text-blue-500 font-bold">Outcome</h3>
-                <p>Ready-to-launch shopping site for small businesses.</p>
+                  <div className="mt-1 flex flex-wrap gap-1">
+                    {projectData.techStack.map((techStackData, index) => (
+                      <span
+                        className="text-blue-500 py-1 px-2 bg-blue-300 rounded-xl"
+                        key={index}
+                      >
+                        {techStackData.stack}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-row gap-2">
-                <a href="">
-                  <img src="" alt="" />
-                  View Code
-                </a>
-                <a href="">
-                  <img src="" alt="" />
-                  Live Demo
-                </a>
+
+              <div className="flex flex-col items-justify ">
+                <img
+                  src={projectData.img}
+                  alt=""
+                  className="w-full h-[13rem] rounded-xl"
+                />
+
+                <div className="flex flex-col mt-5">
+                  <h3 className="text-blue-500 font-bold">Outcome</h3>
+                  <p>{projectData.outcome}</p>
+                </div>
+                <div className="flex flex-col md:flex-row gap-3 items-start py-3">
+                  <a
+                    href=""
+                    className="text-sm bg-blue-500 px-3 rounded-lg text-black py-1"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      style={{ color: "#050505" }}
+                    />
+                    {"  "}
+                    View Code
+                  </a>
+                  <a
+                    href=""
+                    className="text-sm border border-blue-500 px-3 rounded-lg text-white py-1"
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      style={{ color: "#fafafa" }}
+                    />
+                    {"  "}
+                    Live Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </main>
   );
