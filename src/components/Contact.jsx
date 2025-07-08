@@ -10,8 +10,8 @@ import {
 
 const Contact = () => {
   return (
-    <main className="bg-black py-20 px-4">
-      <div className="max-w-4xl mx-auto text-white flex flex-col gap-8 items-center">
+    <main className="bg-black pt-[10rem] px-4 pt-20">
+      <div className="max-w-2xl mx-auto text-white flex flex-col gap-8 items-center">
         <h1 className="text-4xl font-bold tracking-widest">CONTACT</h1>
         <h3 className="text-center text-lg text-gray-300 max-w-xl">
           I’d love to hear from you — reach out for any opportunities or
@@ -94,7 +94,7 @@ const Contact = () => {
           <h1 className="text-xl font-bold text-white">Caleb Adebayo</h1>
           <div className="flex justify-center gap-6 mt-5 text-2xl">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/calebtolorunleke"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -103,7 +103,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/calebtol/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -112,7 +112,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="mailto:your@email.com"
+              href="mailto:calebtolorunleke@yahoo.com"
               aria-label="Email"
               className="hover:text-white transition"
             >

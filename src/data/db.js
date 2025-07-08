@@ -5,6 +5,12 @@ import skill2 from "../skillImages/skill2.png";
 import skill3 from "../skillImages/skill3.png";
 import brandwave from "../images/the_brandwave.png";
 import oau from "../images/oauLogo.png";
+import redux from "../images/redux.png";
+import Vite from "../images/vite.png";
+import Responsive from "../images/responsive.jpg";
+import api from "../images/oauLogo.png";
+import tailwind from "../images/oauLogo.png";
+import react from "../images/oauLogo.png";
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
 
@@ -39,12 +45,12 @@ export const Skilldb = [
     {
         stack: "Frontend",
         skills: [
-            { name: "React.js", img: skill1 },
-            { name: "Redux", img: skill2 },
-            { name: "Vite", img: skill3 },
-            { name: "Responsive Design", img: skill1 },
-            { name: "REST API Integration", img: skill2 },
-            { name: "Tailwind CSS", img: skill3 },
+            { name: "React.js", img: react },
+            { name: "Redux", img: redux },
+            { name: "Vite", img: Vite },
+            { name: "Responsive Design", img: Responsive },
+            { name: "REST API Integration", img: api },
+            { name: "Tailwind CSS", img: tailwind },
         ],
     },
     {

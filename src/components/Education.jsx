@@ -4,20 +4,20 @@ import { education } from "../data/db";
 
 const Education = () => {
   return (
-    <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610]">
+    <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610] pt-10">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center ">
         <h1 className="text-xl md:text-3xl lg:text-3xl underline decoration-blue-500 underline-offset-10 pb-5 decoration-dash font-bold decoration-[5px] ">
           EDUCATION
         </h1>
 
-        <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold">
+        <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold pb-5">
           I continuously invest in expanding my technical knowledge and staying
           updated with modern development practices, which is well-supported by
           my academic background.
         </p>
         {education.map((eduData, index) => (
           <div
-            className=" flex flex-col gap-10 w-full pt-10 md:px-20"
+            className=" flex flex-col gap-10 w-full py-5 md:px-20"
             key={index}
           >
             <div className="flex flex-row items-center gap-2 md:gap-5">
