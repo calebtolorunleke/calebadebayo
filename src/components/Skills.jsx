@@ -18,7 +18,7 @@ const Skills = () => {
         </p>
 
         {/* Skill Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 md:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 md:gap-20 overflow-hidden ">
           {Skilldb.map((eachSkill, index) => (
             <motion.div
               key={index}
