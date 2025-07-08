@@ -32,7 +32,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 md:gap-15">
           {workExp.map((workExpData, index) => (
             <div
-              className="py-5 flex flex-col gap-3 border border-3 px-4 rounded-2xl  md:px-12"
+              className="py-5 flex flex-col gap-3 border border-3 px-4 rounded-2xl  md:px-12 md:mx-20"
               key={index}
             >
               <div className="flex flex-row justify-between items-start">

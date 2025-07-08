@@ -4,6 +4,7 @@ import skill1 from "../skillImages/skill1.png";
 import skill2 from "../skillImages/skill2.png";
 import skill3 from "../skillImages/skill3.png";
 import brandwave from "../images/the_brandwave.png";
+import oau from "../images/oauLogo.png";
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
 
@@ -195,4 +196,24 @@ export const projects = [{
     outcome: "Ready-to-launch shopping site for small businesses.",
     github: "google.com",
     live: "okay.com"
+}]
+
+
+export const education = [{
+    sch: "University of PH",
+    cert: "Bachelor's degree of Computer Science",
+    date: "2021 - 2023",
+    img: oau
+},
+{
+    sch: "University of PH",
+    cert: "Bachelor's degree of Computer Science",
+    date: "2021 - 2023",
+    img: oau
+},
+{
+    sch: "University of PH",
+    cert: "Bachelor's degree of Computer Science",
+    date: "2021 - 2023",
+    img: oau
 }]

@@ -61,7 +61,7 @@ const Projects = () => {
         </p>
 
         {/* Slide Container */}
-        <div className="relative w-full overflow-hidden md:overflow-visible">
+        <div className="relative w-full overflow-hidden md:overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{
