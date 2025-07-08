@@ -1,7 +1,6 @@
 import React from "react";
 import gitLogo from "../images/githubIcon.png";
 import inLogo from "../images/linkedInIcon.png";
-import { Link } from "react-router-dom";
 
 const Menubar = () => {
   return (
@@ -9,19 +8,19 @@ const Menubar = () => {
       {/* Navigation Links */}
       <ul className="flex flex-col sm:flex-row justify-between items-center gap-4 text-base sm:text-lg font-medium tracking-wide">
         <li className="hover:text-blue-400 transition cursor-pointer">
-          <Link to="/about">About</Link>
+          <a href="/about">About</a>
         </li>
         <li className="hover:text-blue-400 transition cursor-pointer">
-          <Link to="/skills">Skills</Link>
+          <a href="/skills">Skills</a>
         </li>
         <li className="hover:text-blue-400 transition cursor-pointer">
-          <Link to="/experience">Experience</Link>
+          <a href="/experience">Experience</a>
         </li>
         <li className="hover:text-blue-400 transition cursor-pointer">
-          <Link to="/projects">Projects</Link>
+          <a href="/projects">Projects</a>
         </li>
         <li className="hover:text-blue-400 transition cursor-pointer">
-          <Link to="/education">Education</Link>
+          <a href="/education">Education</a>
         </li>
       </ul>
 

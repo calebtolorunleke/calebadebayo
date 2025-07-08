@@ -35,7 +35,7 @@ const About = () => {
   }, [subIndex, index, deleting]);
 
   return (
-    <main className="bg-big-squares pt-20">
+    <main className="bg-big-squares pt:5 md:pt-15">
       <div className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-4 md:px-12 gap-5 items-center">
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">

@@ -50,7 +50,11 @@ const Skills = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.3, delay: subIndex * 0.05 }}
                   >
-                    <img src={skill.img} alt={skill.name} className="w-5 h-5" />
+                    <img
+                      src={skill.img}
+                      alt={skill.name}
+                      className="w-5 h-5 rounded-full"
+                    />
                     <span className="text-sm md:text-lg">{skill.name}</span>
                   </motion.div>
                 ))}

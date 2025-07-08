@@ -4,7 +4,7 @@ import inLogo from "../images/linkedInIcon.png";
 import menuIcon from "../images/menuIcon.png";
 import cancel from "../images/cancel.png";
 import Menubar from "./Menubar";
-import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const Head = () => {
   const [Menu, setMenu] = useState("");
@@ -14,8 +14,8 @@ const Head = () => {
       <main className="bg-big-squares fixed w-full z-50">
         <div className="max-w-[1250px] bg-big-squares mx-auto text-white py-4 px-6 md:px-12 flex flex-row justify-between items-center relative">
           {/* Logo */}
-          <Link
-            to="/"
+          <a
+            href="/"
             className="text-sm sm:text-lg md:text-lg lg:text-lg font-bold flex flex-row items-center cursor-pointer
               transition duration-300 ease-in-out hover:text-blue-400 hover:scale-105"
           >
@@ -24,20 +24,23 @@ const Head = () => {
             <span className="text-blue-500">/</span>
             <span className="">ADEBAYO</span>
             <span className="text-blue-500">&gt;</span>
-          </Link>
+          </a>
 
           {/* Navigation Links */}
           <ul className="hidden md:flex lg:flex flex-row justify-between items-center gap-5 lg:gap-10">
             {["About", "Skills", "Experience", "Projects", "Education"].map(
               (item, index) => (
                 <li key={index}>
-                  <Link
-                    to={`/${item.toLowerCase()}`}
-                    className="cursor-pointer transition duration-300 ease-in-out 
-                 hover:text-blue-400 hover:scale-105 capitalize"
+                  <a
+                    href={`/${item.toLowerCase()}`}
+                    className={`capitalize transition duration-300 ease-in-out hover:text-blue-400 hover:scale-105 ${
+                      window.location.pathname === `/${item.toLowerCase()}`
+                        ? "border-b-2 border-blue-500 pb-1 text-blue-400"
+                        : ""
+                    }`}
                   >
                     {item}
-                  </Link>
+                  </a>
                 </li>
               )
             )}
@@ -45,20 +48,20 @@ const Head = () => {
 
           {/* Social Icons */}
           <div className="hidden md:flex lg:flex flex-row justify-between items-center gap-5">
-            <Link to="https://github.com/calebtolorunleke" target="_blank">
+            <a href="https://github.com/calebtolorunleke" target="_blank">
               <img
                 src={gitLogo}
                 alt="github logo"
                 className="w-7 h-7 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-[0_0_5px_#3b82f6]"
               />
-            </Link>
-            <Link to="https://www.linkedin.com/in/calebtol/" target="_blank">
+            </a>
+            <a href="https://www.linkedin.com/in/calebtol/" target="_blank">
               <img
                 src={inLogo}
                 alt="linkedin logo"
                 className="w-7 h-7 cursor-pointer transition duration-300 ease-in-out hover:scale-110 hover:drop-shadow-[0_0_5px_#3b82f6]"
               />
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
