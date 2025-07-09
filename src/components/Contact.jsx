@@ -1,7 +1,6 @@
-import React from "react"; // React component file (e.g. Footer.jsx)
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-// Brand icons (for GitHub, LinkedIn, React, Node, JS, etc.)
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -9,6 +8,31 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9fpg4o8",
+        "template_tbdjwnl",
+        form.current,
+        "sZP8MH_W86HtLUclm"
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+
+    e.target.reset(); // Clear form after submission
+  };
+
   return (
     <main className="bg-black pt-[10rem] px-4 pt-20">
       <div className="max-w-2xl mx-auto text-white flex flex-col gap-8 items-center">
@@ -18,7 +42,11 @@ const Contact = () => {
           questions!
         </h3>
 
-        <form className="w-full flex flex-col gap-6 p-6 sm:p-5 rounded-lg bg-gradient-to-br from-[#0a0f2c] via-[#1a1a2e] to-black shadow-2xl border border-blue-500">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="w-full flex flex-col gap-6 p-6 sm:p-5 rounded-lg bg-gradient-to-br from-[#0a0f2c] via-[#1a1a2e] to-black shadow-2xl border border-blue-500"
+        >
           {/* Name */}
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-sm font-medium">
@@ -26,11 +54,11 @@ const Contact = () => {
             </label>
             <input
               id="name"
+              name="name"
               type="text"
               placeholder="Your name"
-              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md
-                         focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)]
-                         hover:ring-1 hover:ring-blue-500 transition duration-200"
+              required
+              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)] hover:ring-1 hover:ring-blue-500 transition duration-200"
             />
           </div>
 
@@ -41,26 +69,26 @@ const Contact = () => {
             </label>
             <input
               id="email"
+              name="email"
               type="email"
               placeholder="Your email"
-              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md
-                         focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)]
-                         hover:ring-1 hover:ring-blue-500 transition duration-200"
+              required
+              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)] hover:ring-1 hover:ring-blue-500 transition duration-200"
             />
           </div>
 
-          {/* Email */}
+          {/* Subject */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-sm font-medium">
+            <label htmlFor="subject" className="text-sm font-medium">
               Subject
             </label>
             <input
-              id="text"
+              id="subject"
+              name="subject"
               type="text"
               placeholder="Subject"
-              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md
-                         focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)]
-                         hover:ring-1 hover:ring-blue-500 transition duration-200"
+              required
+              className="w-full px-4 py-2 bg-[#0a0a0a] text-white rounded-md focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)] hover:ring-1 hover:ring-blue-500 transition duration-200"
             />
           </div>
 
@@ -71,20 +99,18 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="5"
               placeholder="Your message here..."
-              className="w-full px-4 py-3 bg-[#0a0a0a] text-white rounded-md resize-none
-                         focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)]
-                         hover:ring-1 hover:ring-blue-500 transition duration-200"
+              required
+              className="w-full px-4 py-3 bg-[#0a0a0a] text-white rounded-md resize-none focus:outline-none focus:shadow-[0_0_12px_4px_rgba(59,130,246,0.7)] hover:ring-1 hover:ring-blue-500 transition duration-200"
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 hover:scale-[1.02]
-                       py-3 rounded-md text-black font-semibold shadow-md
-                       hover:shadow-lg transition duration-300 ease-in-out"
+            className="w-full bg-blue-500 hover:bg-blue-600 hover:scale-[1.02] py-3 rounded-md text-black font-semibold shadow-md hover:shadow-lg transition duration-300 ease-in-out"
           >
             Submit
           </button>

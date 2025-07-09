@@ -11,7 +11,7 @@ import tailwind from "../images/tailwind.png";
 import react from "../images/reactjs.png";
 import node from "../images/node.png";
 import express from "../images/expressjs.png";
-import MongoDB from "../images/oauLogo.png";
+import MongoDB from "../images/mongo.png";
 import MySQL from "../images/mysql.png";
 import jwt from "../images/jwt.png";
 import OAuth from "../images/oauth.png";
@@ -33,7 +33,11 @@ import vnr from "../images/vnr.png"
 import figma from "../images/figma.png"
 import trellojira from "../images/trellojira.png"
 import stz from "../images/stz.jpg"
-
+import luminaStyle from "../images/luminaStyle.jpg"
+import tasman from "../images/tasman.jpg"
+import thepiggy from "../images/thepiggy.jpg"
+import unique from "../images/unique.png"
+import eksu from "../images/eksu.webp"
 
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
@@ -194,86 +198,104 @@ export const workExp = [{
 },]
 
 
-
-
 export const projects = [{
     title: "Brandwave",
-    subTitle: "Clothing E-commerce Site",
-    goal: "agbeniga ma yowo",
-    myRole: "Ready-to-launch shopping site for small businesses",
+    subTitle: "Build. Brand. Track.",
+    goal: "A team-built platform empowering clients to launch their own brand sites.",
+    myRole: "Full-Stack Engineer",
     techStack: [
-        { stack: "next.js" },
-        { stack: "redux" },
-        { stack: "tailwindcss" },
-        { stack: "typescript" }
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "Context API" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API " },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+
     ],
     img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses.",
+    outcome: "Successfully launched the app using Vercel and MongoDB Atlas.",
     github: "https://github.com/calebtolorunleke/Brandwave_App",
     live: "https://the-brandwave.vercel.app/"
 }, {
-    title: "Tasman",
-    subTitle: "suba osuab osuba",
-    goal: "thank you lord",
-    myRole: "Ready-to-launch shopping site for small businesses",
+    title: "Lumina StyleHub",
+    subTitle: "Landing page for a boutique clothing business, designed to showcase style and elegance",
+    goal: "Provide a seamless user experience that highlights the boutique’s unique fashion offerings",
+    myRole: "Front-End Developer",
     techStack: [
-        { stack: "node.js" },
-        { stack: "grafana" },
-        { stack: "all" },
-        { stack: "css" }
+        { stack: "React.js" },
+        { stack: "Responsive design" },
+        { stack: "Git/GitHub" },
+        { stack: "Tailwind CSS" }
     ],
-    img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses.",
-    github: "google.com",
-    live: "okay.com"
-}, {
+    img: luminaStyle,
+    outcome: "Delivered a clean, responsive landing page that effectively showcases the boutique’s brand and products.",
+    github: "https://github.com/calebtolorunleke/LuminaStyleHub",
+    live: "https://lumina-style-hub.vercel.app"
+},
+{
     title: "Tasman",
-    subTitle: "suba osuab osuba",
-    goal: "thank you lord",
-    myRole: "Ready-to-launch shopping site for small businesses",
+    subTitle: "A productivity app designed to help a CEO track and manage daily activities efficiently.",
+    goal: "Create a simple, intuitive app that allows the CEO to track, update, and review daily tasks and activities",
+    myRole: "Full-Stack Developer",
     techStack: [
-        { stack: "node.js" },
-        { stack: "grafana" },
-        { stack: "all" },
-        { stack: "css" }
+        { stack: "React.js" },
+        { stack: "Express" },
+        { stack: "Node.js" },
+        { stack: "MongoDB" },
+        { stack: "JWT" },
+        { stack: "Redux" },
+        { stack: "Git/GitHub" }
     ],
-    img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses.",
-    github: "google.com",
-    live: "okay.com"
-}, {
-    title: "Tasman",
-    subTitle: "suba osuab osuba",
-    goal: "thank you lord",
-    myRole: "Ready-to-launch shopping site for small businesses",
+    img: tasman,
+    outcome: "Delivered a custom task management app that improved the CEO’s daily productivity and task visibility",
+    github: "https://github.com/calebtolorunleke/tasmanApp",
+    live: "https://tasman-app.vercel.app"
+},
+
+{
+    title: "The Piggy",
+    subTitle: "A secure fintech platform designed to help users automate and manage their savings.",
+    goal: "Build a fintech solution that encourages saving through automated deposits, goal tracking, and reminders",
+    myRole: "Full-Stack Developer",
     techStack: [
-        { stack: "node.js" },
-        { stack: "grafana" },
-        { stack: "all" },
-        { stack: "css" }
+        { stack: "React.js" },
+        { stack: "Express" },
+        { stack: "Node.js" },
+        { stack: "MongoDB" },
+        { stack: "JWT" },
+        { stack: "Redux" },
+        { stack: "Git/GitHub" }
     ],
-    img: brandwave,
-    outcome: "Ready-to-launch shopping site for small businesses.",
-    github: "google.com",
-    live: "okay.com"
+    img: thepiggy,
+    outcome: "Enabled users to set savings goals, automate deposits, and view progress via dynamic dashboards.",
+    github: "https://github.com/calebtolorunleke/the_Piggy",
+    live: "https://the-piggy.vercel.app"
 }]
 
 
 export const education = [{
-    sch: "University of PH",
-    cert: "Bachelor's degree of Computer Science",
-    date: "2021 - 2023",
+    sch: "Obafemi Awolowo University",
+    cert: "Postgraduate, Computer Science and Engineering",
+    date: "2023 - 2023",
     img: oau
 },
 {
-    sch: "University of PH",
-    cert: "Bachelor's degree of Computer Science",
-    date: "2021 - 2023",
+    sch: "University of Ado Ekiti",
+    cert: "Bachelor of Science, Biotechnology",
+    date: "2014 - 2020",
+    img: eksu
+},
+{
+    sch: "Obafemi Awolowo University",
+    cert: "Diploma, Computer Science and Engineering",
+    date: "2013 - 2015",
     img: oau
 },
 {
-    sch: "University of PH",
-    cert: "Bachelor's degree of Computer Science",
-    date: "2021 - 2023",
-    img: oau
+    sch: "Unique Minds International School",
+    cert: "West Africa Senior Seecondary School Certificate WASSCE",
+    date: "2008 - 2012",
+    img: unique
 }]
