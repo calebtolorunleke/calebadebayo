@@ -34,10 +34,10 @@ const Contact = () => {
   };
 
   return (
-    <main className="bg-black pt-[10rem] px-4 pt-20">
-      <div className="max-w-2xl mx-auto text-white flex flex-col gap-8 items-center">
-        <h1 className="text-4xl font-bold tracking-widest">CONTACT</h1>
-        <h3 className="text-center text-lg text-gray-300 max-w-xl">
+    <main className="bg-black px-4 pt-10">
+      <div className="max-w-xl mx-auto text-white flex flex-col gap-5 items-center">
+        <h1 className="text-3xl font-bold tracking-widest">CONTACT</h1>
+        <h3 className="text-center text-md text-gray-300 max-w-xl">
           I’d love to hear from you — reach out for any opportunities or
           questions!
         </h3>
@@ -45,7 +45,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-full flex flex-col gap-6 p-6 sm:p-5 rounded-lg bg-gradient-to-br from-[#0a0f2c] via-[#1a1a2e] to-black shadow-2xl border border-blue-500"
+          className="w-full flex flex-col gap-3 p-3 sm:p-3 rounded-lg bg-gradient-to-br from-[#0a0f2c] via-[#1a1a2e] to-black shadow-2xl border border-blue-500"
         >
           {/* Name */}
           <div className="flex flex-col gap-2">
@@ -116,9 +116,11 @@ const Contact = () => {
           </button>
         </form>
 
-        <footer className="flex flex-col items-center pt-20 pb-10 bg-black text-gray-400">
-          <h1 className="text-xl font-bold text-white">Caleb Adebayo</h1>
-          <div className="flex justify-center gap-6 mt-5 text-2xl">
+        <footer className="flex flex-col items-center pt-10 pb-5 bg-black text-gray-400">
+          <h1 className="text-md font-bold text-white">
+            Caleb <span className="text-blue-500">Adebayo</span>
+          </h1>
+          <div className="flex justify-center gap-3 mt-1 text-xl">
             <a
               href="https://github.com/calebtolorunleke"
               target="_blank"
@@ -154,7 +156,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>
           </div>
-          <span className="mt-6 text-sm text-gray-500">
+          <span className="mt-1 text-sm text-gray-500">
             © 2025 Caleb Adebayo. All rights reserved.
           </span>
         </footer>

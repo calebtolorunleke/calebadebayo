@@ -6,11 +6,12 @@ const Education = () => {
   return (
     <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610] pt-10">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center ">
-        <h1 className="text-xl md:text-3xl lg:text-3xl underline decoration-blue-500 underline-offset-10 pb-5 decoration-dash font-bold decoration-[5px] ">
+        <h1 className="relative inline-block text-xl md:text-3xl lg:text-3xl pb-3 font-bold">
           EDUCATION
+          <span className="absolute left-1/2 -bottom-0 w-1/2 h-[3px] bg-blue-500  -translate-x-1/2"></span>
         </h1>
 
-        <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold pb-5">
+        <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold pt-3 pb-5">
           I continuously invest in expanding my technical knowledge and staying
           updated with modern development practices, which is well-supported by
           my academic background.

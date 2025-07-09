@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import profilePic from "../images/aboutme.jpg";
 import { motion } from "framer-motion";
 import { aboutme, name, desc } from "../data/db";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const [text, setText] = useState("");
@@ -35,7 +37,7 @@ const About = () => {
   }, [subIndex, index, deleting]);
 
   return (
-    <main className="bg-big-squares pt:5 md:pt-15">
+    <main className="bg-big-squares">
       <div className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-4 md:px-12 gap-5 items-center">
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
@@ -64,10 +66,10 @@ const About = () => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-block rounded-full bg-blue-500 px-6 md:px-10 py-3 text-white font-semibold text-lg md:text-xl shadow-lg 
-             hover:bg-blue-600 hover:text-black transition-all duration-300 ease-in-out"
+            className="flex flex-row gap-2 items-center mt-5  rounded-lg bg-blue-500 px-5 md:px-8 py-2 text-white font-semibold text-md md:text-md shadow-xl hover:bg-blue-800 transition-all duration-300 ease-in-out"
           >
-            DOWNLOAD CV
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            <span>Open CV</span>
           </a>
         </div>
 

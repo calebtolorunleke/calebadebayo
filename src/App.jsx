@@ -1,30 +1,81 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Head from "./components/Head";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Head from "./components/Head";
 import Education from "./components/Education";
+import NotFound from "./components/NotFound";
+
+const Layout = ({ children }) => (
+  <>
+    <Head />
+    {children}
+    <Contact />
+  </>
+);
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Head />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/education" element={<Education />} />
-        </Routes>
-        <Contact />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* All valid pages wrapped in Head + Contact */}
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+        <Route
+          path="/skills"
+          element={
+            <Layout>
+              <Skills />
+            </Layout>
+          }
+        />
+        <Route
+          path="/experience"
+          element={
+            <Layout>
+              <Experience />
+            </Layout>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <Layout>
+              <Projects />
+            </Layout>
+          }
+        />
+        <Route
+          path="/education"
+          element={
+            <Layout>
+              <Education />
+            </Layout>
+          }
+        />
+
+        {/* NotFound page WITHOUT Head and Contact */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

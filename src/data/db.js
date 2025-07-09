@@ -38,6 +38,7 @@ import tasman from "../images/tasman.jpg"
 import thepiggy from "../images/thepiggy.jpg"
 import unique from "../images/unique.png"
 import eksu from "../images/eksu.webp"
+import { title } from "framer-motion/client";
 
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
@@ -298,4 +299,47 @@ export const education = [{
     cert: "West Africa Senior Seecondary School Certificate WASSCE",
     date: "2008 - 2012",
     img: unique
+}]
+
+export const Certified = [{
+    title: "Full-Stack Developer",
+    date: "Dec, 2024 - July, 2025",
+    course: "https://techstudioacademy.com/courses/fullstack-development",
+    pdf: "./techStudio.pdf"
+}, {
+    title: "Certified Dvelopment",
+    date: "Jan, 2021 - April, 2021",
+    course: "https://www.sololearn.com/en/learn/courses/html-introduction",
+    pdf: "./solohtml.pdf"
+}, {
+    title: "Web Development",
+    date: "June, 2022 - Mar, 2021",
+    course: "hello.cohttps://mimo.orgm",
+    pdf: "./mimo.pdf"
+},
+{
+    title: "API Designer ",
+    date: "Aug, 2023 - Oct, 2023",
+    course: "https://apiacademy.learnupon.com/users/sign_in",
+    pdf: "./apidesigner.pdf.jpeg"
+}, {
+    title: "Scrum Fundamentals Certified (SFC)",
+    date: "May, 2023 - Aug, 2023",
+    course: "https://www.scrumstudy.com",
+    pdf: "./scrum.jpeg"
+}, {
+    title: "Microsoft Certified: Azure Fundamentals",
+    date: "Dec, 2022 - Feb, 2023",
+    course: "https://www.credly.com/badges/093fa078-0ae5-45db-bc07-3217feb825ef/linked_in_profile",
+    pdf: "./resume.pdf"
+}, {
+    title: "IBM IT Support",
+    date: "May, 2022 - Feb, 2023",
+    course: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/JTABZ3JTDWQY",
+    pdf: "./ibmsupport.jpg"
+}, {
+    title: "Google IT Support Professional",
+    date: "May, 2021 - Jan, 2022",
+    course: "https://coursera.org/share/d3c6bb52e9958b51dde02c9532b9afa1",
+    pdf: "./googleitsup.jpg"
 }]

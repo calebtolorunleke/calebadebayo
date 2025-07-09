@@ -7,23 +7,9 @@ const Experience = () => {
     <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610] text-white pt-20 ">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center">
         {/* Header */}
-        <h1 className="relative text-xl md:text-3xl lg:text-3xl font-bold pb-4 md:pb-6 text-white text-center">
+        <h1 className="relative inline-block text-xl md:text-3xl lg:text-3xl pb-3 font-bold">
           WORK EXPERIENCE
-          <span className="absolute left-1/2 bottom-0 w-[80%] h-[20px] -translate-x-1/2">
-            <svg
-              viewBox="0 0 400 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full"
-            >
-              <path
-                d="M0 15 Q50 0, 100 15 T200 15 T300 15 T400 15"
-                stroke="#3B82F6"
-                strokeWidth="10"
-                fill="transparent"
-              />
-            </svg>
-          </span>
+          <span className="absolute left-1/2 -bottom-0 w-1/2 h-[3px] bg-blue-500  -translate-x-1/2"></span>
         </h1>
 
         {/* Subheading */}

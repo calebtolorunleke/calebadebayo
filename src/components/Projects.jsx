@@ -115,7 +115,7 @@ const Projects = () => {
                         <div className="mt-1 flex flex-wrap gap-1">
                           {projectData.techStack.map((techStackData, idx) => (
                             <span
-                              className="text-blue-500 py-1 px-2 bg-blue-300 rounded-xl"
+                              className="text-blue-500 py-2 text-sm px-2 bg-blue-200 rounded-lg"
                               key={idx}
                             >
                               {techStackData.stack}
