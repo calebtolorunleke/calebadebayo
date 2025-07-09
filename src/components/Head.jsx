@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import gitLogo from "../images/githubIcon.png";
 import inLogo from "../images/linkedInIcon.png";
 import menuIcon from "../images/menuIcon.png";
 import cancel from "../images/cancel.png";
 import Menubar from "./Menubar";
 // import { NavLink } from "react-router-dom";
-
 const Head = () => {
   const [Menu, setMenu] = useState("");
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.setAttribute("defer", "");
+    script.setAttribute("data-domain", "calebadebayo.vercel.app");
+    script.src = "https://plausible.io/js/script.js";
+    document.head.appendChild(script);
+  }, []);
 
   return (
     <>
