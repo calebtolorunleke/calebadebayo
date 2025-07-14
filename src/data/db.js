@@ -312,7 +312,7 @@ export const Certified = [{
     course: "https://www.sololearn.com/en/learn/courses/html-introduction",
     pdf: "./solohtml.pdf"
 }, {
-    title: "Web Development",
+    title: " ",
     date: "June, 2022 - Mar, 2021",
     course: "hello.cohttps://mimo.orgm",
     pdf: "./mimo.pdf"
