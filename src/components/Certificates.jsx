@@ -16,7 +16,7 @@ const Certificates = () => {
             Certificates
             <span className="block w-16 h-[3px] bg-blue-500 rounded-full mx-auto mt-2"></span>
           </h1>
-          <p className="text-gray-400 text-sm mt-3">
+          <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold pt-3 pb-5">
             My recent certifications and learning achievements.
           </p>
         </div>
@@ -26,13 +26,13 @@ const Certificates = () => {
           {Certified.map((cert, index) => (
             <div
               key={index}
-              className="bg-[#111827] rounded-xl shadow-lg p-6 flex flex-col justify-between transition transform hover:-translate-y-1 hover:shadow-blue-600/40 duration-300"
+              className="bg-[#111827] rounded-xl shadow-lg p-4 flex flex-col justify-between transition transform hover:-translate-y-1 hover:shadow-blue-600/40 duration-300"
             >
               <div>
                 <h2 className="text-lg md:text-xl font-semibold mb-1">
                   {cert.title}
                 </h2>
-                <p className="text-sm text-gray-400">{cert.date}</p>
+                {/* <p className="text-sm text-gray-400">{cert.date}</p> */}
               </div>
 
               <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:gap-4">

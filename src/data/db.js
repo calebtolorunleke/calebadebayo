@@ -239,7 +239,7 @@ export const workExp = [{
 export const projects = [{
     title: "API Management Portal (GTBank)",
     subTitle: "Internal onboarding system for GTBank API partners",
-    goal: "To streamline the onboarding process for third-party developers integrating with GTBank's APIs, with secure and role-specific access.",
+    goal: "To streamline the onboarding process for third-party vendors API integrating with GTBank's APIs, with secure and role-specific access.",
     myRole: "Frontend Developer",
     techStack: [
         { stack: "React.js" },
@@ -371,7 +371,29 @@ export const projects = [{
     outcome: "Enabled users to set savings goals, automate deposits, and view progress via dynamic dashboards.",
     github: "https://github.com/calebtolorunleke/the_Piggy",
     live: "https://the-piggy.vercel.app"
-}]
+},
+{
+    title: "Properly Real Estate App",
+    subTitle: "Landlord–tenant platform with address search and access control",
+    goal: "Built a real estate application that connected landlords and tenants, enabling property listings, secure access, and location-aware features.",
+    myRole: "Full-Stack Developer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "MongoDB" },
+        { stack: "Docker" },
+        { stack: "Git & GitHub" }
+    ],
+    img: "", // Add screenshot if available
+    outcome: "Implemented route protection, dynamic address lookup, and containerized the backend API using Docker to streamline local development and deployment.",
+    github: "", // Add your GitHub repo if public
+    live: "" // Add live link if hosted
+}
+
+]
 
 
 export const education = [{
@@ -400,20 +422,25 @@ export const education = [{
 }]
 
 export const Certified = [{
-    title: "Full-Stack Developer",
+    title: "Full-Stack Developer (Tech Studio)",
     date: "Dec, 2024 - July, 2025",
     course: "https://techstudioacademy.com/courses/fullstack-development",
     pdf: "./techStudio.pdf"
 }, {
-    title: "Certified Dvelopment",
-    date: "Jan, 2021 - April, 2021",
-    course: "https://www.sololearn.com/en/learn/courses/html-introduction",
-    pdf: "./solohtml.pdf"
+    title: "Meta Full-Stack Developer",
+    date: "Dec, 2024 - July, 2025",
+    course: "https://www.coursera.org/specializations/meta-full-stack-developer",
+    pdf: "./meta.pdf"
 }, {
-    title: " ",
-    date: "June, 2022 - Mar, 2021",
-    course: "hello.cohttps://mimo.orgm",
+    title: "Frontend Development Certification",
+    date: "Jan, 2021 - April, 2021",
+    course: "https://mimo.org/",
     pdf: "./mimo.pdf"
+}, {
+    title: "Spring Boot Certified",
+    date: "June, 2022 - Mar, 2021",
+    course: "https://www.google.com/search?q=spring+boot&rlz=1C5GCEA_enNG1121NG1122&oq=spring+boot&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIGCAIQRRg80gEIMjI5N2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8",
+    pdf: "./springboot.pdf"
 },
 {
     title: "API Designer ",
@@ -426,10 +453,10 @@ export const Certified = [{
     course: "https://www.scrumstudy.com",
     pdf: "./scrum.jpeg"
 }, {
-    title: "Microsoft Certified: Azure Fundamentals",
+    title: "Microsoft Certified: Azure",
     date: "Dec, 2022 - Feb, 2023",
     course: "https://www.credly.com/badges/093fa078-0ae5-45db-bc07-3217feb825ef/linked_in_profile",
-    pdf: "./resume.pdf"
+    pdf: "./azure.pdf"
 }, {
     title: "IBM IT Support",
     date: "May, 2022 - Feb, 2023",

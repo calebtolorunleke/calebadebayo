@@ -49,9 +49,9 @@ const Projects = () => {
   };
 
   return (
-    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56] text-white overlap-hidden pt-20">
-      <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center ">
-        <h1 className="text-xl md:text-4xl lg:text-4xl font-bold flex flex-row gap-2">
+    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56] text-white overlap-hidden pt-5 md:pt-15">
+      <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-5 md:px-12 items-center ">
+        <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold flex flex-row gap-2">
           <span className="text-white">FEATURED</span>
           <span className="text-blue-600">PROJECTS</span>
         </h1>
@@ -81,7 +81,7 @@ const Projects = () => {
                 <div
                   key={index}
                   className={`
-                    py-10
+                    py-2
                     w-full
                     flex
                     justify-center
@@ -129,7 +129,7 @@ const Projects = () => {
                       <img
                         src={projectData.img}
                         alt=""
-                        className="w-full h-[13rem] rounded-xl object- object-center"
+                        className="w-full h-[13rem] rounded-xl  object-center"
                       />
 
                       <div className="flex flex-col mt-5">
