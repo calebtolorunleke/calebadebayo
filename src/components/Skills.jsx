@@ -35,11 +35,11 @@ const Skills = () => {
                 ease: "easeOut",
               }}
             >
-              <h1 className="text-lg md:text-3xl text-center text-gray-400 font-bold">
+              <h1 className="text-md md:text-xl text-center text-gray-400 font-bold">
                 {eachSkill.stack}
               </h1>
 
-              <div className="flex flex-wrap gap-3 justify-center">
+              <div className="flex flex-wrap gap-2 justify-center">
                 {eachSkill.skills.map((skill, subIndex) => (
                   <motion.div
                     key={subIndex}
@@ -54,9 +54,9 @@ const Skills = () => {
                     <img
                       src={skill.img}
                       alt={skill.name}
-                      className="w-5 h-5 rounded-full"
+                      className="w-4 h-4 rounded-full"
                     />
-                    <span className="text-sm md:text-lg">{skill.name}</span>
+                    <span className="text-sm md:text-md">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>

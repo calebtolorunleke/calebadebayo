@@ -58,7 +58,7 @@ export const aboutme = [{
 }]
 
 export const desc = {
-    description: "I am a Versatile Full-Stack Web Developer and Technical Support Engineer with 6+ years of experience, including 4+ years in application support and infrastructure maintenance. Proficient in the MERN stack, building dynamic, SEO-optimized solutions. Adept in frontend/backend development, automation, and server-side troubleshooting. Skilled in tools like Tailwind CSS, Shadcn/ui, NestJS, Grafana, Dynatrace, and various, databases. Passionate about continuous learning, problem-solving, and delivering scalable user-focused applications."
+    description: "Full Stack Developer with 4+ years of experience building fast, scalable web apps using React, Next.js, Node.js, and MongoDB. Skilled in crafting accessible UIs with Tailwind CSS and TypeScript, integrating APIs, and optimizing performance. Proven ability to ship clean, testable code and deliver features under pressure."
 }
 
 
@@ -139,10 +139,45 @@ export const Skilldb = [
 
 
 export const workExp = [{
+    jobTitle: "Frontend Developer",
+    companyName: "Findworka – Hybrid",
+    date: "Feb 2022 - Jul 2025",
+    role: "Delivered high-impact frontend solutions across 59+ responsive pages, boosting engagement by 40% and cutting load times by 25%. Led JavaScript-to-TypeScript migration (~99k files), reducing bugs by 30%. Improved state management with Redux Toolkit and React Query, and built a reusable component library with Storybook, accelerating development by 35%. Shipped critical modules like an Account Opening system in 3 days, an API Management Portal with RBAC, and a Funds Manager app serving thousands. Enhanced system performance and accessibility across banking platforms.",
+    toolsUsed:
+        [
+            { name: "React.js" },
+            { name: "TypeScript" },
+            { name: "JavaScript" },
+            { name: "Redux Toolkit" },
+            { name: "React Query" },
+            { name: "Storybook" },
+            { name: "HTML5" },
+            { name: "CSS3" },
+            { name: "Responsive Design" },
+            { name: "Tailwind CSS" }, // or SCSS if used instead
+            { name: "API Integration" },
+            { name: "RBAC" },
+            { name: "OTP Verification" },
+            { name: "Session Management" },
+            { name: "Code Refactoring" },
+            { name: "Performance Optimization" },
+            { name: "Bug Reduction" },
+            { name: "Git" },
+            { name: "GitHub" },
+            { name: "CI/CD" },
+            { name: "VS Code" },
+            { name: "AWS, Azure" },
+            { name: "Agile Methodology" },
+            { name: "Component Testing" },
+            { name: "Accessibility" },
+            { name: "Problem Solving" }
+
+        ]
+}, {
     jobTitle: "Software Engineer/Application Support Engineer",
-    companyName: "Guaranty Trust Bank (GTCO)",
+    companyName: "Guaranty Trust Bank (GTCO) - Remote",
     date: "Oct 2022 - Jun 2025",
-    role: "I supported and optimized critical banking applications (Internet Banking, USSD, APIs, and loan systems) by ensuring high availability, performance, and reliability. My role combined backend software engineering with infrastructure maintenance — managing databases (MySQL, Oracle, MongoDB), Linux/Windows servers, and tools like Dynatrace, Grafana, and AWS CloudWatch. I automated tasks using JavaScript and Python, troubleshot incidents, and collaborated across teams to deliver resilient, scalable solutions.",
+    role: "Maintained and optimized core banking applications (Internet Banking, USSD, APIs), ensuring 99.98% uptime and supporting 2M+ users. Monitored systems using Dynatrace, Grafana, and AWS CloudWatch, reducing incident response time by 40%. Automated backend operations with JavaScript and Python, and improved system scalability across MySQL, Oracle, and MongoDB databases.",
     toolsUsed: [
         { name: "MySQL" },
         { name: "Postman" },
@@ -161,42 +196,41 @@ export const workExp = [{
         { name: "Operating Systems" },
         { name: "APIs" }
     ]
+}, {
+    jobTitle: "Junior Frontend Developer",
+    companyName: "Guaranty Trust Bank (GTCO)",
+    date: "Jan 2021 - Jun 2022",
+    role: "Built responsive and accessible UIs using React, Zustand, and Tailwind CSS. Improved performance and user experience by optimizing state management, reducing bundle size, and achieving a perfect Lighthouse score on mobile. Worked with TypeScript and Node.js to deliver end-to-end features and speed up development workflows.",
+    toolsUsed: [
+        { name: "React.js" },
+        { name: "TypeScript" },
+        { name: "Node.js" },
+        { name: "Tailwind CSS" },
+        { name: "CI/CD" },
+        { name: "Git/Github" },
+        { name: "Lighthouse Optimization" },
+        { name: "Performance Tuning" },
+        { name: "Responsive Design" },
+        { name: "API Integration" }
+    ]
+
 },
 {
-    jobTitle: "Frontend Development Instructor",
-    companyName: "Swit, Australia (Remote)",
-    date: "Feb 2022- Jun 2023",
-    role: " Delivered hands-on training in HTML, CSS, JavaScript, and frontend frameworks like React.js and Bootstrap, while guiding learners through full-stack project implementation using Node.js, Express, and MongoDB.I created learner-focused materials, facilitated workshops, mentored students through real-world projects, and supported them in building professional portfolios. I also contributed to curriculum development and provided career coaching through resume reviews and mock interviews — helping students become job-ready in tech.",
+    jobTitle: "Intern Frontend Developer",
+    companyName: "Deloitte – Remote",
+    date: "Jun 2020 – Dec 2020",
+    role: "Redesigned an e-commerce interface with React and Tailwind CSS, boosting user engagement by 30%. Added PWA features to improve mobile experience and retention, and optimized API integration to reduce load times by 40%.",
     toolsUsed: [
         { name: "HTML5" },
         { name: "CSS3" },
         { name: "React.js" },
-        { name: "Bootstrap" },
-        { name: "JavaScript (ES6+)" },
-        { name: "MongoDB" },
-        { name: "Postman" },
-        { name: "Visual Studio Code" }
+        { name: "Tailwind CSS" },
+        { name: "PWA" },
+        { name: "API Integration" },
+        { name: "Performance Optimization" }
 
     ]
-},
-{
-    jobTitle: "Solution Engineer/ RPA Developer",
-    companyName: "Deloitte",
-    date: "Feb 2022- Dec 2022",
-    role: " Contributed to the full lifecycle of intelligent automation solutions, from development to deployment, using UiPath RPA and Enterprise Service Bus (ESB) technologies. I collaborated with cross-functional teams to gather requirements, design workflows, create technical documentation (PDDs, SDDs, TSDs), and conduct rigorous testing.I also supported ESB integration, provided client-specific troubleshooting, and managed databases across Microsoft SQL, Oracle, and NoSQL platforms. Post-deployment, I ensured smooth operations through support and performance tuning, while actively pursuing industry best practices and technical upskilling.",
-    toolsUsed: [
-        { name: "UiPath" },
-        { name: "Robotic Process Automation (RPA)" },
-        { name: "RESTful APIs / SOAP APIs" },
-        { name: "SQL" },
-        { name: "Oracle DB" },
-        { name: "Jira" },
-        { name: "Postman" },
-        { name: "Process Design Documents (PDD)" },
-        { name: "Solution Design Documents (SDD)" }
-
-    ]
-},]
+}]
 
 
 export const projects = [{

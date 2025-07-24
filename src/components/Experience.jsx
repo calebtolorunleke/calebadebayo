@@ -7,13 +7,13 @@ const Experience = () => {
     <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610] text-white pt-20 ">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center">
         {/* Header */}
-        <h1 className="relative inline-block text-xl md:text-3xl lg:text-3xl pb-3 font-bold">
+        <h1 className="relative inline-block text-xl md:text-2xl lg:text-2xl pb-3 font-bold">
           WORK EXPERIENCE
           <span className="absolute left-1/2 -bottom-0 w-1/2 h-[3px] bg-blue-500  -translate-x-1/2"></span>
         </h1>
 
         {/* Subheading */}
-        <p className="mt-2 text-lg md:px-[10rem] text-center text-gray-400 font-bold mb-10">
+        <p className="mt-2 text-sm md:text-xl md:px-[10rem] text-center text-gray-400 font-bold mb-10 w-[]">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
@@ -38,15 +38,15 @@ const Experience = () => {
               {/* Header Row */}
               <div className="flex flex-row justify-between items-start">
                 <h2 className="flex flex-col items-start">
-                  <span className="text-lg md:text-2xl font-semibold text-white">
+                  <span className="text-md md:text-lg font-semibold text-white">
                     {workExpData.jobTitle}
                   </span>
-                  <span className="text-md md:text-xl text-gray-400">
+                  <span className="text-md md:text-lg text-gray-400">
                     {workExpData.companyName}
                   </span>
                 </h2>
                 <div className="bg-gray-400 text-black font-semibold rounded-lg py-1 px-2 md:px-3">
-                  <span className="text-sm md:text-lg">{workExpData.date}</span>
+                  <span className="text-sm md:text-md">{workExpData.date}</span>
                 </div>
               </div>
 
