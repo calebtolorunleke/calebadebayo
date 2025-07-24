@@ -2,6 +2,9 @@ import skill1 from "../skillImages/skill1.png";
 import skill2 from "../skillImages/skill2.png";
 import skill3 from "../skillImages/skill3.png";
 import brandwave from "../images/the_brandwave.png";
+import transita from "../images/transita.jpg"
+import travellegnos from "../images/travellegnos.jpg"
+import gtbankLogo from "../images/gtbank.png"
 import oau from "../images/oauLogo.png";
 import redux from "../images/redux.png";
 import Vite from "../images/vite.png";
@@ -177,7 +180,7 @@ export const workExp = [{
     jobTitle: "Software Engineer/Application Support Engineer",
     companyName: "Guaranty Trust Bank (GTCO) - Remote",
     date: "Oct 2022 - Jun 2025",
-    role: "Maintained and optimized core banking applications (Internet Banking, USSD, APIs), ensuring 99.98% uptime and supporting 2M+ users. Monitored systems using Dynatrace, Grafana, and AWS CloudWatch, reducing incident response time by 40%. Automated backend operations with JavaScript and Python, and improved system scalability across MySQL, Oracle, and MongoDB databases.",
+    role: "Maintained and optimized core banking systems (Internet Banking, USSD, APIs) using SQL, Oracle, and MongoDB across Linux and Windows servers. Automated operational tasks with JavaScript and Python, improving deployment efficiency by 35% and monitoring of server infrastructure usage by 90%. Troubleshot application issues across Internet Banking, USSD, and API platforms. Ensured 99.98% uptime while monitoring system health with Dynatrace, Grafana, and AWS CloudWatch, reducing incident response time by 40%.",
     toolsUsed: [
         { name: "MySQL" },
         { name: "Postman" },
@@ -198,9 +201,9 @@ export const workExp = [{
     ]
 }, {
     jobTitle: "Junior Frontend Developer",
-    companyName: "Guaranty Trust Bank (GTCO)",
-    date: "Jan 2021 - Jun 2022",
-    role: "Built responsive and accessible UIs using React, Zustand, and Tailwind CSS. Improved performance and user experience by optimizing state management, reducing bundle size, and achieving a perfect Lighthouse score on mobile. Worked with TypeScript and Node.js to deliver end-to-end features and speed up development workflows.",
+    companyName: "Swit, Australia (Remote)",
+    date: "Feb 2023 - Jun 2023",
+    role: "Built responsive and accessible UIs using React, Zustand, and Tailwind CSS. Improved performance and user experience by reducing bundle size by 28%, optimizing state management, and achieving a 100/100 Lighthouse score on mobile. Developed scalable features with TypeScript and Node.js, accelerating development workflows and reducing CI/CD time by 65%.",
     toolsUsed: [
         { name: "React.js" },
         { name: "TypeScript" },
@@ -234,6 +237,67 @@ export const workExp = [{
 
 
 export const projects = [{
+    title: "API Management Portal (GTBank)",
+    subTitle: "Internal onboarding system for GTBank API partners",
+    goal: "To streamline the onboarding process for third-party developers integrating with GTBank's APIs, with secure and role-specific access.",
+    myRole: "Frontend Developer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API" },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+    ],
+    img: gtbankLogo, // Optional: Add GTBank-branded internal preview if allowed
+    outcome: "Developed a responsive interface with OTP authentication, role-based access control (RBAC), and form validation to improve security and user flow. Helped reduce API partner onboarding time by 40%. (Private/Internal Only)",
+    github: "Private/Internal", // Private/Internal
+    live: "Internal Only" // Internal Only
+}
+    ,
+{
+    title: "Travel Legnos",
+    subTitle: "A sleek and intuitive travel agency website for tour bookings and destination highlights",
+    goal: "To create a user-friendly platform for exploring destinations, viewing packages, and making seamless travel bookings.",
+    myRole: "Full-Stack Engineer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API" },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+    ],
+    img: travellegnos,
+    outcome: "Built a responsive and visually engaging travel website with dynamic content and booking functionality. Enhanced loading speed by 35% and improved user engagement with interactive UI components and optimized API endpoints.",
+    github: "https://github.com/calebtolorunleke/travellegnos",
+    live: "https://travellegnos.vercel.app/"
+}
+    , {
+    title: "Transita App",
+    subTitle: "A modern ride-booking web app for commuters and transport operators",
+    goal: "To streamline urban transportation by allowing users to book rides, track trips, and manage bookings with ease.",
+    myRole: "Full-Stack Engineer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API" },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+    ],
+    img: transita,
+    outcome: "Successfully built a full-stack ride-booking platform with user authentication, live route tracking, and booking history. Improved booking speed by 40% and enhanced user satisfaction with responsive design and seamless UI/UX.",
+    github: "https://github.com/calebtolorunleke/the_transita_app",
+    live: "https://the-transita-app.vercel.app/"
+},
+{
     title: "Brandwave",
     subTitle: "Build. Brand. Track.",
     goal: "A team-built platform empowering clients to launch their own brand sites.",

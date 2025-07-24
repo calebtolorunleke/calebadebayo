@@ -24,7 +24,7 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    slideInterval.current = setInterval(nextSlide, 5000);
+    slideInterval.current = setInterval(nextSlide, 40000);
     return () => clearInterval(slideInterval.current);
   }, []);
 
@@ -129,7 +129,7 @@ const Projects = () => {
                       <img
                         src={projectData.img}
                         alt=""
-                        className="w-full h-[13rem] rounded-xl object-cover"
+                        className="w-full h-[13rem] rounded-xl object- object-center"
                       />
 
                       <div className="flex flex-col mt-5">
