@@ -142,10 +142,19 @@ export const Skilldb = [
 
 
 export const workExp = [{
-    jobTitle: "Full Stack / Frontend Developer",
+    jobTitle: "Full-Stack / Front-end Developer",
     companyName: "Findworka – Hybrid",
     date: "Feb 2022 - Jul 2025",
-    role: "I built and launched 59+ dynamic, responsive web pages that boosted user engagement by 40% and improved load times by 25%. I led a company-wide migration from JavaScript to TypeScript (~99,000 files), which reduced bugs by 30% and improved code quality. I also designed scalable front-end systems using Redux Toolkit, React Query, and Storybook, which sped up development by 35%. I took ownership of major projects like: An Account Opening System (delivered in 3 days, driving a 5% increase in customer acquisition). A Secure API Management Portal with RBAC, OTP verification, and session tracking. A Funds Manager App serving thousands of customers. Additionally, I improved accessibility, performance, and maintainability across multiple banking platforms, helping the business scale with better user experiences.",
+    role: [
+        "Built and launched 59+ dynamic, responsive web pages that boosted user engagement by 40% and improved load times by 25%.",
+        "Led a company-wide migration from JavaScript to TypeScript (~99,000 files), reducing bugs by 30% and improving code quality.",
+        "Designed scalable front-end systems using Redux Toolkit, React Query, and Storybook, which sped up development by 35%.",
+        "Took ownership of major projects including:",
+        "• Account Opening System (delivered in 3 days, driving a 5% increase in customer acquisition).",
+        "• Secure API Management Portal with RBAC, OTP verification, and session tracking.",
+        "• Funds Manager App serving thousands of customers.",
+        "Improved accessibility, performance, and maintainability across multiple banking platforms, helping the business scale with better user experiences."
+    ],
     toolsUsed:
         [
             { name: "React.js" },
