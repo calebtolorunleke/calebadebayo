@@ -49,7 +49,7 @@ const Projects = () => {
   };
 
   return (
-    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56] text-white overlap-hidden pt-5 md:pt-15">
+    <main className="bg-gradient-to-b from-[#010610] via-[#0b1a0a] to-[#0f2f56] text-white overlap-hidden pt-5 md:pt-10">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-5 md:px-12 items-center ">
         <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold flex flex-row gap-2">
           <span className="text-white">FEATURED</span>

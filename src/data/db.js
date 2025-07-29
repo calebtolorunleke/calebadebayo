@@ -47,18 +47,20 @@ import { title } from "framer-motion/client";
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
 
 export const aboutme = [{
+    stack: "Front-end Developer"
+}, {
     stack: "Full-Stack Developer"
-}, {
-    stack: "React Developer"
-}, {
-    stack: "Nodejs Backend Developer"
-}, {
-    stack: "Tech Instructor"
-}, {
-    stack: "REST & GraphQL APIs Expert"
-}, {
-    stack: "Technical Support Engineer"
-}]
+}
+    //  {
+    //     stack: "Nodejs Backend Developer"
+    // }, {
+    //     stack: "Tech Instructor"
+    // }, {
+    //     stack: "REST & GraphQL APIs Expert"
+    // }, {
+    //     stack: "Technical Support Engineer"
+    // }
+]
 
 export const desc = {
     description: "Full Stack Developer with 4+ years of experience building fast, scalable web apps using React, Next.js, Node.js, and MongoDB. Skilled in crafting accessible UIs with Tailwind CSS and TypeScript, integrating APIs, and optimizing performance. Proven ability to ship clean, testable code and deliver features under pressure."
@@ -246,6 +248,61 @@ export const workExp = [{
 
 
 export const projects = [{
+    title: "Transita App",
+    subTitle: "A modern ride-booking web app for commuters and transport operators",
+    goal: "To streamline urban transportation by allowing users to book rides, track trips, and manage bookings with ease.",
+    myRole: "Full-Stack Engineer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API" },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+    ],
+    img: transita,
+    outcome: "Successfully built a full-stack ride-booking platform with user authentication, live route tracking, and booking history. Improved booking speed by 40% and enhanced user satisfaction with responsive design and seamless UI/UX.",
+    github: "https://github.com/calebtolorunleke/the_transita_app",
+    live: "https://the-transita-app.vercel.app/"
+}, {
+    title: "Lumina StyleHub",
+    subTitle: "Landing page for a boutique clothing business, designed to showcase style and elegance",
+    goal: "Provide a seamless user experience that highlights the boutique’s unique fashion offerings",
+    myRole: "Front-End Developer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Responsive design" },
+        { stack: "Git/GitHub" },
+        { stack: "Tailwind CSS" }
+    ],
+    img: luminaStyle,
+    outcome: "Delivered a clean, responsive landing page that effectively showcases the boutique’s brand and products.",
+    github: "https://github.com/calebtolorunleke/LuminaStyleHub",
+    live: "https://lumina-style-hub.vercel.app"
+},
+{
+    title: "Brandwave",
+    subTitle: "Build. Brand. Track.",
+    goal: "A team-built platform empowering clients to launch their own brand sites.",
+    myRole: "Full-Stack Engineer",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "Context API" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API " },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+
+    ],
+    img: brandwave,
+    outcome: "Successfully launched the app using Vercel and MongoDB Atlas.",
+    github: "https://github.com/calebtolorunleke/Brandwave_App",
+    live: "https://the-brandwave.vercel.app/"
+}, {
     title: "API Management Portal (GTBank)",
     subTitle: "Internal onboarding system for GTBank API partners",
     goal: "To streamline the onboarding process for third-party vendors API integrating with GTBank's APIs, with secure and role-specific access.",
@@ -286,62 +343,7 @@ export const projects = [{
     github: "https://github.com/calebtolorunleke/travellegnos",
     live: "https://travellegnos.vercel.app/"
 }
-    , {
-    title: "Transita App",
-    subTitle: "A modern ride-booking web app for commuters and transport operators",
-    goal: "To streamline urban transportation by allowing users to book rides, track trips, and manage bookings with ease.",
-    myRole: "Full-Stack Engineer",
-    techStack: [
-        { stack: "React.js" },
-        { stack: "Tailwind CSS" },
-        { stack: "TypeScript" },
-        { stack: "Node.js" },
-        { stack: "Express" },
-        { stack: "REST API" },
-        { stack: "MongoDB" },
-        { stack: "Git & GitHub" }
-    ],
-    img: transita,
-    outcome: "Successfully built a full-stack ride-booking platform with user authentication, live route tracking, and booking history. Improved booking speed by 40% and enhanced user satisfaction with responsive design and seamless UI/UX.",
-    github: "https://github.com/calebtolorunleke/the_transita_app",
-    live: "https://the-transita-app.vercel.app/"
-},
-{
-    title: "Brandwave",
-    subTitle: "Build. Brand. Track.",
-    goal: "A team-built platform empowering clients to launch their own brand sites.",
-    myRole: "Full-Stack Engineer",
-    techStack: [
-        { stack: "React.js" },
-        { stack: "Tailwind CSS" },
-        { stack: "Context API" },
-        { stack: "Node.js" },
-        { stack: "Express" },
-        { stack: "REST API " },
-        { stack: "MongoDB" },
-        { stack: "Git & GitHub" }
-
-    ],
-    img: brandwave,
-    outcome: "Successfully launched the app using Vercel and MongoDB Atlas.",
-    github: "https://github.com/calebtolorunleke/Brandwave_App",
-    live: "https://the-brandwave.vercel.app/"
-}, {
-    title: "Lumina StyleHub",
-    subTitle: "Landing page for a boutique clothing business, designed to showcase style and elegance",
-    goal: "Provide a seamless user experience that highlights the boutique’s unique fashion offerings",
-    myRole: "Front-End Developer",
-    techStack: [
-        { stack: "React.js" },
-        { stack: "Responsive design" },
-        { stack: "Git/GitHub" },
-        { stack: "Tailwind CSS" }
-    ],
-    img: luminaStyle,
-    outcome: "Delivered a clean, responsive landing page that effectively showcases the boutique’s brand and products.",
-    github: "https://github.com/calebtolorunleke/LuminaStyleHub",
-    live: "https://lumina-style-hub.vercel.app"
-},
+    ,
 {
     title: "Tasman",
     subTitle: "A productivity app designed to help a CEO track and manage daily activities efficiently.",
