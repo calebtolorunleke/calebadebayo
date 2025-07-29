@@ -152,9 +152,9 @@ export const workExp = [{
         "Led a company-wide migration from JavaScript to TypeScript (~99,000 files), reducing bugs by 30% and improving code quality.",
         "Designed scalable front-end systems using Redux Toolkit, React Query, and Storybook, which sped up development by 35%.",
         "Took ownership of major projects including:",
-        "• Account Opening System (delivered in 3 days, driving a 5% increase in customer acquisition).",
-        "• Secure API Management Portal with RBAC, OTP verification, and session tracking.",
-        "• Funds Manager App serving thousands of customers.",
+        "Account Opening System (delivered in 3 days, driving a 5% increase in customer acquisition).",
+        "Secure API Management Portal with RBAC, OTP verification, and session tracking.",
+        "Funds Manager App serving thousands of customers.",
         "Improved accessibility, performance, and maintainability across multiple banking platforms, helping the business scale with better user experiences."
     ],
     toolsUsed:
@@ -191,7 +191,7 @@ export const workExp = [{
     jobTitle: "Software Engineer/Application Support Engineer",
     companyName: "Guaranty Trust Bank (GTCO) - Remote",
     date: "Oct 2022 - Jun 2025",
-    role: "Maintained and optimized core banking systems (Internet Banking, USSD, APIs) using SQL, Oracle, and MongoDB across Linux and Windows servers. Automated operational tasks with JavaScript and Python, improving deployment efficiency by 35% and monitoring of server infrastructure usage by 90%. Troubleshot application issues across Internet Banking, USSD, and API platforms. Ensured 99.98% uptime while monitoring system health with Dynatrace, Grafana, and AWS CloudWatch, reducing incident response time by 40%.",
+    role: ["Maintained and optimized core banking systems (Internet Banking, USSD, APIs) using SQL, Oracle, and MongoDB across Linux and Windows servers.", "Automated operational tasks with JavaScript and Python, improving deployment efficiency by 35%", "Monitoring of server infrastructure usage by 90%.", "Troubleshot application issues across Internet Banking, USSD, and API platforms.", "Ensured 99.98% uptime while monitoring system health with Dynatrace, Grafana, and AWS CloudWatch, reducing incident response time by 40%."],
     toolsUsed: [
         { name: "MySQL" },
         { name: "Postman" },
@@ -214,12 +214,13 @@ export const workExp = [{
     jobTitle: "Junior Frontend Developer",
     companyName: "Swit, Australia (Remote)",
     date: "Feb 2023 - Jun 2023",
-    role: "Built responsive and accessible UIs using React, Zustand, and Tailwind CSS. Improved performance and user experience by reducing bundle size by 28%, optimizing state management, and achieving a 100/100 Lighthouse score on mobile. Developed scalable features with TypeScript and Node.js, accelerating development workflows and reducing CI/CD time by 65%.",
+    role: ["Engineered a lightweight state management system using React Context and Zustand, reducing bundle size by 28%.", "Redesigned UI for a SaaS product, raising satisfaction by 15% and reducing churn by 10%.", "Achieved 100/100 Lighthouse performance on mobile by optimizing rendering and asset delivery.", "Optimized TypeScript builds and implemented incremental compilation, reducing CI/CD time by 65%.", "Collaborated across teams to implement efficient Node.js APIs and deliver end-to-end product features with responsive, accessible interfaces."],
     toolsUsed: [
         { name: "React.js" },
         { name: "TypeScript" },
         { name: "Node.js" },
         { name: "Tailwind CSS" },
+        { name: "MongoDB" },
         { name: "CI/CD" },
         { name: "Git/Github" },
         { name: "Lighthouse Optimization" },
@@ -233,7 +234,7 @@ export const workExp = [{
     jobTitle: "Intern Frontend Developer",
     companyName: "Deloitte – Remote",
     date: "Jun 2020 – Dec 2020",
-    role: "Redesigned an e-commerce interface with React and Tailwind CSS, boosting user engagement by 30%. Added PWA features to improve mobile experience and retention, and optimized API integration to reduce load times by 40%.",
+    role: ["Redesigned an e-commerce interface with React and Tailwind CSS, boosting user engagement by 30%.", "Implemented PWA features with service workers, raising mobile retention by 25%", "optimized API integration to reduce load times by 40%."],
     toolsUsed: [
         { name: "HTML5" },
         { name: "CSS3" },

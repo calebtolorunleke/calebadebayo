@@ -51,7 +51,16 @@ const Experience = () => {
               </div>
 
               {/* Role Description */}
-              <p className="text-gray-300">{workExpData.role}</p>
+              {/* <p className="text-gray-300">{workExpData.role}</p> */}
+              {workExpData.role && Array.isArray(workExpData.role) ? (
+                <ul className="text-gray-300 list-disc ml-6">
+                  {workExpData.role.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-gray-300">{workExpData.role}</p>
+              )}
 
               {/* Tools Used */}
               <div className="flex flex-wrap gap-3 mt-2">
