@@ -15,7 +15,7 @@ const Experience = () => {
         {/* Subheading */}
         <p className="mt-2 text-sm md:text-xl md:px-[10rem] text-center text-gray-400 font-bold mb-10 w-[]">
           A collection of my work experience and the roles I have taken in
-          various organizations
+          various organizations in Banking and Technology industries.
         </p>
 
         {/* Experience Cards */}
