@@ -37,6 +37,7 @@ import figma from "../images/figma.png"
 import trellojira from "../images/trellojira.png"
 import stz from "../images/stz.jpg"
 import luminaStyle from "../images/luminaStyle.jpg"
+import Shortly from "../images/Shortly.jpg"
 import tasman from "../images/tasman.jpg"
 import thepiggy from "../images/thepiggy.jpg"
 import unique from "../images/unique.png"
@@ -269,6 +270,22 @@ export const projects = [{
     github: "https://github.com/calebtolorunleke/the_transita_app",
     live: "https://the-transita-app.vercel.app/"
 }, {
+    title: "Shortly",
+    subTitle: "A Fast and Lightweight URL Shortening Tool Built with React and Node.js",
+    goal: "To develop a lightweight and user-friendly URL shortening application that allows users to generate shortened links, store them locally for future access, and easily copy them to the clipboard. The goal was to practice full-stack development, local persistence, API integration, and responsive UI design.",
+    myRole: "Designed and implemented both the frontend and backend architecture",
+    techStack: [
+        { stack: "React.js, Tailwind CSS" },
+        { stack: "Responsive design" },
+        { stack: "Netlify serveless API" },
+        { stack: "Git/GitHub" },
+        { stack: "Tailwind CSS" }
+    ],
+    img: Shortly,
+    outcome: "Delivered a clean, responsive landing page that effectively showcases the boutique’s brand and products.",
+    github: "https://github.com/calebtolorunleke/urlshortner",
+    live: "https://urlshortner-rho-lilac.vercel.app/"
+}, {
     title: "Lumina StyleHub",
     subTitle: "Landing page for a boutique clothing business, designed to showcase style and elegance",
     goal: "Provide a seamless user experience that highlights the boutique’s unique fashion offerings",
@@ -412,7 +429,7 @@ export const projects = [{
 export const education = [{
     sch: "Obafemi Awolowo University",
     cert: "Postgraduate, Computer Science and Engineering",
-    date: "2023 - 2023",
+    date: "2023 - 2025",
     img: oau
 },
 {
