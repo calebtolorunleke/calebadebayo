@@ -468,7 +468,7 @@ export const Certified = [{
     pdf: "./mimo.pdf"
 }, {
     title: "Spring Boot Certified",
-    date: "June, 2022 - Mar, 2021",
+    date: "June, 2022 - March, 2021",
     course: "https://www.google.com/search?q=spring+boot&rlz=1C5GCEA_enNG1121NG1122&oq=spring+boot&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIGCAIQRRg80gEIMjI5N2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8",
     pdf: "./springboot.pdf"
 },
