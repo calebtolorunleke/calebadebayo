@@ -24,7 +24,7 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    slideInterval.current = setInterval(nextSlide, 40000);
+    slideInterval.current = setInterval(nextSlide, 70000);
     return () => clearInterval(slideInterval.current);
   }, []);
 

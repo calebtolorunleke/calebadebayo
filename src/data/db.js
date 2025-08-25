@@ -40,6 +40,7 @@ import luminaStyle from "../images/luminaStyle.jpg"
 import Shortly from "../images/Shortly.jpg"
 import tasman from "../images/tasman.jpg"
 import thepiggy from "../images/thepiggy.jpg"
+import betahouse from "../images/betahouse.jpg"
 import unique from "../images/unique.png"
 import eksu from "../images/eksu.webp"
 import { title } from "framer-motion/client";
@@ -251,6 +252,25 @@ export const workExp = [{
 
 
 export const projects = [{
+    title: "Beta House",
+    subTitle: "A Modern Approach to Smart Living",
+    goal: "To provide affordable and functional housing that meets the needs of students/young professionals",
+    myRole: "Acted as Full-Stack Developer, building the web platform for Beta House with React, Node.js, and MongoDB, integrating user-friendly interfaces and backend services.",
+    techStack: [
+        { stack: "React.js" },
+        { stack: "Tailwind CSS" },
+        { stack: "TypeScript" },
+        { stack: "Node.js" },
+        { stack: "Express" },
+        { stack: "REST API" },
+        { stack: "MongoDB" },
+        { stack: "Git & GitHub" }
+    ],
+    img: betahouse,
+    outcome: "Successfully developed a responsive web platform that allows users to explore, manage, and interact with Beta House features.",
+    github: "https://github.com/calebtolorunleke/beta-house",
+    live: "https://beta-house-eta.vercel.app"
+}, {
     title: "Transita App",
     subTitle: "A modern ride-booking web app for commuters and transport operators",
     goal: "To streamline urban transportation by allowing users to book rides, track trips, and manage bookings with ease.",
