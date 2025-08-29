@@ -41,9 +41,7 @@ const About = () => {
       <div className="grid md:grid-cols-2 bg-square pt-30 pb-10 max-w-[1240px] mx-auto px-4 md:px-12 gap-5 items-center">
         {/* Left Text Section */}
         <div className="order-2 md:order-1 text-center md:text-left flex flex-col items-center md:items-start gap-5">
-          <h1 className="text-white text-2xl md:text-5xl font-bold">
-            Hi, I am
-          </h1>
+          <h1 className="text-white text-2xl md:text-5xl font-bold">Hi, I'm</h1>
           <h1 className="text-white text-3xl md:text-5xl font-bold">
             {name.middlename}
           </h1>
