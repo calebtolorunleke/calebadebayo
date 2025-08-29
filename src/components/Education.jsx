@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 const Education = () => {
   const location = useLocation();
   return (
-    <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610] pt-10">
+    <main className="bg-gradient-to-b from-[#0f2f56] via-[#0b1a0a] to-[#010610]  pt-10">
       <div className="py-[3rem] flex flex-col text-white max-w-[1240px] mx-auto px-4 md:px-12 items-center ">
         <h1 className="relative inline-block text-xl md:text-3xl lg:text-3xl pb-3 font-bold">
           EDUCATION
