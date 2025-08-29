@@ -293,7 +293,7 @@ export const projects = [{
     title: "Shortly",
     subTitle: "A Fast and Lightweight URL Shortening Tool Built with React and Node.js",
     goal: "To develop a lightweight and user-friendly URL shortening application that allows users to generate shortened links, store them locally for future access, and easily copy them to the clipboard. The goal was to practice full-stack development, local persistence, API integration, and responsive UI design.",
-    myRole: "Designed and implemented both the frontend and backend architecture",
+    myRole: "Designed and implemented both the frontend and the backend architecture",
     techStack: [
         { stack: "React.js, Tailwind CSS" },
         { stack: "Responsive design" },
