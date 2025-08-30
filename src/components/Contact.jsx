@@ -38,7 +38,7 @@ const Contact = () => {
       <div className="max-w-xl mx-auto text-white flex flex-col gap-5 items-center">
         <h1 className="text-3xl font-bold tracking-widest">CONTACT</h1>
         <h3 className="text-center text-md text-gray-300 max-w-xl">
-          I’d love to hear from you — reach out for any opportunities or
+          I’d love to hear from you — kindly reach out for any opportunities or
           questions!
         </h3>
 
