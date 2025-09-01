@@ -15,9 +15,9 @@ const Education = () => {
         </h1>
 
         <p className="text-lg md:px-[10rem] text-center text-gray-400 font-bold pt-3 pb-5">
-          I continuously invest in expanding my technical knowledge and staying
-          updated with the modern development practices, which is well-supported
-          by my academic background.
+          I continuously invest in the expanding my technical knowledge and
+          staying updated with the modern development practices, which is
+          well-supported by my academic background.
         </p>
         {education.map((eduData, index) => (
           <div
