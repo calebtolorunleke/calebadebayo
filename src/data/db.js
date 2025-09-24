@@ -149,8 +149,8 @@ export const Skilldb = [
 
 export const workExp = [{
     jobTitle: "Full Stack Developer (Volunteer)",
-    companyName: "Findworka – Hybrid",
-    date: "Feb 2022 - Jul 2025",
+    companyName: "Skill4Skill – Toronto, Ontario, Canada",
+    date: "Aug 2025 - Present",
     role: [
         "Develop and maintain backend systems using Node.js, Express, and MongoDB, ensuring data security, scalability, and optimization.",
         "Design and manage both relational and non-relational databases, implementing data integrity and security measures.",
@@ -198,15 +198,15 @@ export const workExp = [{
     companyName: "Findworka – Hybrid",
     date: "Feb 2022 - Jul 2025",
     role: [
-        "Led front-end development of enterprise web applications serving thousands of users while improving code quality and delivery speed.",
-        "Built and launched 62+ dynamic, responsive web pages.", "Increased user engagement by 40% and improved load times by 25%.",
-        "Led a company-wide migration from JavaScript to TypeScript (~99,000 files), reducing bugs by 30% and improving code quality.",
-        "Designed scalable front-end systems using Redux Toolkit, React Query, and Storybook, which sped up development by 35%.",
-        "Took ownership of major projects including:",
-        "Account Opening System (delivered in 3 days, driving a 5% increase in customer acquisition).",
-        "Secure API Management Portal with RBAC, OTP verification, and session tracking.",
-        "Funds Manager App serving thousands of customers.",
-        "Improved accessibility, performance, and maintainability across multiple banking platforms, helping the business scale with better user experiences."
+        "Delivered 59+ responsive web pages, boosting user engagement by 40% and reducing load times by 25%.",
+        "Migrated ~44,776 JavaScript files to TypeScript, cutting bug reports by 30%.",
+        "Implemented Redux Toolkit and React Query, improving API performance and state handling by 30%.",
+        "Created a reusable component library with Storybook, improving development speed by 35%.",
+        "Delivered an Account Opening Module in 3 days for Non-Resident Nigerians, increasing acquisition by 5%.",
+        "Developed a secure API Management Portal with OTP verification, RBAC, and session tracking.",
+        "Refactored banking modules into accessible and reusable React components, enhancing performance by 12%.",
+        "Improved authentication flow in the Access Manager SSO platform, resulting in a 10% performance gain.",
+        "Built the Hydro Funds Manager web app to onboard Hydro and non-Hydro customers, serving thousands."
     ],
     toolsUsed:
         [
@@ -239,32 +239,9 @@ export const workExp = [{
 
         ]
 }, {
-    jobTitle: "Front-end Engineer/Application Support Developer",
-    companyName: "Guaranty Trust Bank (GTCO) - Remote",
-    date: "Oct 2022 - Jun 2025",
-    role: ["Designed and developed 25+ dynamic, responsive web pages and dashboards using React.js, Next.js, TypeScript, and Tailwind CSS, improving user engagement by 40% and reducing page load time by 35%.", "Implemented scalable state management with Redux/Context API and integrated RESTful/GraphQL APIs, ensuring seamless data flow across applications.", "Led performance optimization initiatives using lazy loading, memoization, and code splitting, which enhanced application efficiency and improved Core Web Vitals by 25%.", "Collaborated with cross-functional teams (UX, QA, and backend) in an Agile/Scrum environment, contributing to the successful delivery of 10+ major product releases per quarter.", "Provided 2nd/3rd-level technical support for critical applications, reducing downtime by 30% through proactive monitoring with Dynatrace, Grafana, and Splunk.", "Resolved 200+ production issues and bugs, performing root cause analysis and deploying timely fixes through CI/CD pipelines (GitHub Actions, Jenkins).", "Automated repetitive support tasks using Python and Shell scripts, improving support team efficiency by 20%.", "Deployed and maintained applications across AWS and Azure environments, ensuring 99.9% uptime and strict adherence to SLA requirements.", "Created detailed runbooks and technical documentation to streamline onboarding and knowledge transfer within the team."],
-    toolsUsed: [
-        { name: "MySQL" },
-        { name: "Postman" },
-        { name: "VS Code" },
-        { name: "Powershell" },
-        { name: "Grafana", },
-        { name: "Dynatrace" },
-        { name: "IT360 Application Manager" },
-        { name: "MongoDB", },
-        { name: "RabbitMQ" },
-        { name: "Tomcat" },
-        { name: "AWS CloudWatch" },
-        { name: "Datadog", },
-        { name: "git" },
-        { name: "Active Directory" },
-        { name: "Operating Systems" },
-        { name: "APIs" }
-    ]
-}, {
     jobTitle: "Junior Frontend Developer",
     companyName: "Swit, Australia (Remote)",
-    date: "Feb 2023 - Jun 2023",
+    date: "Jan 2021 - Jan 2022",
     role: ["Engineered a lightweight state management system using React Context and Zustand, reducing bundle size by 28%.", "Redesigned UI for a SaaS product, raising satisfaction by 15% and reducing churn by 10%.", "Achieved 100/100 Lighthouse performance on mobile by optimizing rendering and asset delivery.", "Optimized TypeScript builds and implemented incremental compilation, reducing CI/CD time by 65%.", "Collaborated across teams to implement efficient Node.js APIs and deliver end-to-end product features with responsive, accessible interfaces."],
     toolsUsed: [
         { name: "React.js" },
