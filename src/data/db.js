@@ -44,6 +44,7 @@ import betahouse from "../images/betahouse.jpg"
 import unique from "../images/unique.png"
 import eksu from "../images/eksu.webp"
 import { title } from "framer-motion/client";
+import next from "../images/nextjs.webp"
 
 
 export const name = { firstname: "Tolorunleke", middlename: "CALEB", lastname: "ADEBAYO" }
@@ -83,10 +84,11 @@ export const Skilldb = [
         skills: [
             { name: "React.js", img: react },
             { name: "Redux", img: redux },
+            { name: "Next.js", img: next },
             { name: "Vite", img: Vite },
+            { name: "Tailwind CSS", img: tailwind },
             { name: "Responsive Design", img: Responsive },
             { name: "REST API Integration", img: api },
-            { name: "Tailwind CSS", img: tailwind },
         ],
     },
     {
@@ -146,6 +148,52 @@ export const Skilldb = [
 
 
 export const workExp = [{
+    jobTitle: "Full Stack Developer (Volunteer)",
+    companyName: "Findworka – Hybrid",
+    date: "Feb 2022 - Jul 2025",
+    role: [
+        "Develop and maintain backend systems using Node.js, Express, and MongoDB, ensuring data security, scalability, and optimization.",
+        "Design and manage both relational and non-relational databases, implementing data integrity and security measures.",
+        "Build and maintain RESTful APIs to support seamless communication between front-end and back-end systems.",
+        "Implement front-end components with Next.js, TypeScript, and Tailwind CSS, collaborating with designers for intuitive, responsive UIs.",
+        "Optimize performance of applications to achieve faster load times and scalability.",
+        "Write and maintain unit and integration tests, ensuring reliability and quality of releases.",
+        "Enhance security compliance, preventing vulnerabilities and safeguarding sensitive data.",
+        "Create clear documentation for APIs, workflows, and codebases to improve knowledge transfer.",
+        "Debug and troubleshoot cross-platform issues, improving the user experience across devices and browsers.",
+        "Stay updated with emerging technologies, proactively suggesting improvements to enhance platform quality."
+    ],
+    toolsUsed:
+        [
+            { name: "React.js" },
+            { name: "TypeScript" },
+            { name: "JavaScript" },
+            { name: "Redux Toolkit" },
+            { name: "React Query" },
+            { name: "Storybook" },
+            { name: "MySQL" },
+            { name: "MongoDB" },
+            { name: "Responsive Design" },
+            { name: "Tailwind CSS" }, // or SCSS if used instead
+            { name: "API Integration" },
+            { name: "RBAC" },
+            { name: "OTP Verification" },
+            { name: "Session Management" },
+            { name: "Code Refactoring" },
+            { name: "Performance Optimization" },
+            { name: "Bug Reduction" },
+            { name: "Git" },
+            { name: "GitHub" },
+            { name: "CI/CD" },
+            { name: "VS Code" },
+            { name: "AWS, Azure" },
+            { name: "Agile Methodology" },
+            { name: "Component Testing" },
+            { name: "Accessibility" },
+            { name: "Problem Solving" }
+
+        ]
+}, {
     jobTitle: "Full-Stack / Front-end Developer",
     companyName: "Findworka – Hybrid",
     date: "Feb 2022 - Jul 2025",
